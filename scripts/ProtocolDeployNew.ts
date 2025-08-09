@@ -175,6 +175,14 @@ async function main() {
     await wait(await modularFarm.updateStrategy(await stakingStrat.getAddress()));
     console.log("Modular StakingStrategy:", await stakingStrat.getAddress());
     addresses.ModularStakingStrategy = await stakingStrat.getAddress();
+
+    const MockPool = await ethers.getContractFactory("MockPool");
+    const mockPool = await MockPool.deploy(await dxp.getAddress());
+    await wait(mockPool.deploymentTransaction());
+    const mockPoolAddr = await mockPool.getAddress();
+    await wait(await modularFarm.setPool(mockPoolAddr));
+    console.log("MockPool:", mockPoolAddr);
+    addresses.MockPool = mockPoolAddr;
   }
   const dxpCtr = await ethers.getContractAt("DXPToken", await dxp.getAddress());
   const toFarmOwner = parseEther("100000");
