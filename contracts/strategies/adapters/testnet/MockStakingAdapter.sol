@@ -26,9 +26,10 @@ contract MockStakingAdapter is IStakingAdapter {
         return amount;
     }
 
-    function harvest(address asset) external returns (uint256) {
+    function harvest(address /*asset*/) external pure returns (uint256) {
         // No rewards minted; returns 0 to keep accounting simple on testnet.
         // You can top-up this adapter with the asset and replace this with a payout if desired.
+       //harvest function is not used in testnet
         return 0;
     }
 
