@@ -2,10 +2,9 @@
 pragma solidity ^0.8.24;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./Farm.sol";
-import "./RestakeFarm.sol";
-import "./RootFarm.sol";
 import "./interfaces/IFarmFactory.sol";
+import "./deployers/FarmDeployer.sol";
+import "./deployers/RestakeFarmDeployer.sol";
 
 /**
  * @title FarmFactory
@@ -14,9 +13,13 @@ import "./interfaces/IFarmFactory.sol";
  */
 contract FarmFactory is Ownable, IFarmFactory {
     uint256 public currentFarmId;
+    address public farmDeployer;
+    address public restakeFarmDeployer;
 
-    constructor() Ownable(msg.sender) {
+    constructor(address _farmDeployer, address _restakeFarmDeployer) Ownable(msg.sender) {
         currentFarmId = 1;
+        farmDeployer = _farmDeployer;
+        restakeFarmDeployer = _restakeFarmDeployer;
     }
 
     function createFarm(
@@ -34,7 +37,8 @@ contract FarmFactory is Ownable, IFarmFactory {
         farmId = currentFarmId++;
         bytes32 finalSalt = keccak256(abi.encodePacked(msg.sender, salt));
 
-        farmAddress = address(new Farm{salt: finalSalt}(
+        farmAddress = FarmDeployer(farmDeployer).deploy(
+            finalSalt,
             farmId,
             asset,
             maturityPeriod,
@@ -46,7 +50,7 @@ contract FarmFactory is Ownable, IFarmFactory {
             owner(),
             claimToken,
             farmOwner
-        ));
+        );
     }
 
     function createRestakeFarm(
@@ -65,7 +69,8 @@ contract FarmFactory is Ownable, IFarmFactory {
         farmId = currentFarmId++;
         bytes32 finalSalt = keccak256(abi.encodePacked(msg.sender, salt));
 
-        farmAddress = address(new RestakeFarm{salt: finalSalt}(
+        farmAddress = RestakeFarmDeployer(restakeFarmDeployer).deploy(
+            finalSalt,
             farmId,
             asset,
             maturityPeriod,
@@ -78,7 +83,7 @@ contract FarmFactory is Ownable, IFarmFactory {
             claimToken,
             farmOwner,
             rootFarmAddress
-        ));
+        );
     }
 
 }

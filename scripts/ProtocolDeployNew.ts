@@ -23,8 +23,21 @@ async function main() {
   await wait(faucet.deploymentTransaction());
   console.log("DXPFaucet:", await faucet.getAddress());
   addresses.DXPFaucet = await faucet.getAddress();
+  const FarmDeployer = await ethers.getContractFactory("FarmDeployer");
+  const farmDeployer = await FarmDeployer.deploy();
+  await wait(farmDeployer.deploymentTransaction());
+  console.log("FarmDeployer:", await farmDeployer.getAddress());
+
+  const RestakeFarmDeployer = await ethers.getContractFactory("RestakeFarmDeployer");
+  const restakeFarmDeployer = await RestakeFarmDeployer.deploy();
+  await wait(restakeFarmDeployer.deploymentTransaction());
+  console.log("RestakeFarmDeployer:", await restakeFarmDeployer.getAddress());
+
   const FarmFactory = await ethers.getContractFactory("FarmFactory");
-  const farmFactory = await FarmFactory.deploy();
+  const farmFactory = await FarmFactory.deploy(
+    await farmDeployer.getAddress(),
+    await restakeFarmDeployer.getAddress()
+  );
   await wait(farmFactory.deploymentTransaction());
   console.log("FarmFactory:", await farmFactory.getAddress());
   addresses.FarmFactory = await farmFactory.getAddress();

@@ -1,0 +1,13 @@
+{
+  "network": "base-sepolia",
+  "deployer": "0x578636C1CDfd5BCA3F1e787Fa49c2ea664c7bd8C",
+  "DXPToken": "0x0b1eaF26bD222968C738F35EBdca7d9988243AB2",
+  "DXPFaucet": "0x80a7f577c4A25b929C6C182b75b7BbA4D4130a3e",
+  "FarmFactory": "0x26b18b67bf82174Dcb65515b3F186B865e015108",
+  "ProtocolCore": "0xf67A6848C81e9ddA3ce11091E4a608ba05aE0975",
+  "MockBridgeAdapter": "0xF30E87Ca10096cf5550cdCf2c6B78761a47460eD",
+  "MockLiquidityManager": "0xC4DB5E934C511d9045aAB5d15D1cBc086D883a27",
+  "Consensus": "0xa9C3515AAe0cdCFff3786Eaf867f14e43c5300Bb",
+  "RootFarm": "0x5aeBeb6f29a377A8E006b52aB2C36d93476f10a6",
+  "RootAnchorMMStrategy": "0xf86352d89cEa314f2D251dd3DC1684637FfFf361"
+}

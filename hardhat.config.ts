@@ -9,16 +9,7 @@ const config: HardhatUserConfig = {
       { version: "0.8.24", settings: { optimizer: { enabled: true, runs: 200 }, viaIR: true } },
       { version: "0.8.17", settings: { optimizer: { enabled: true, runs: 200 }, viaIR: true } },
     ],
-    overrides: {
-      "contracts/FarmFactory.sol": {
-        version: "0.8.24",
-        settings: {
-          optimizer: { enabled: true, runs: 200 },
-          viaIR: false,
-          metadata: { bytecodeHash: "none" }
-        }
-      }
-    },
+    overrides: {},
   },
   networks: {
     hardhat: { allowUnlimitedContractSize: true },
