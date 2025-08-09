@@ -281,12 +281,12 @@ contract Farm is Ownable, ReentrancyGuard {
         uint256 avail = availableLiquidity();
         if (avail > targetReserve) {
             uint256 toDeploy = avail - targetReserve;
-            this.deployLiquidity(toDeploy);
+            _deployLiquidity(toDeploy);
         } else if (avail < targetReserve) {
             uint256 shortfall = targetReserve - avail;
             if (shortfall > deployedLiquidity) shortfall = deployedLiquidity;
             if (shortfall > 0) {
-                this.withdrawFromStrategy(shortfall);
+                _withdrawFromStrategy(shortfall);
             }
         }
         emit RebalancedToTarget(targetReserve, availableLiquidity(), deployedLiquidity);
@@ -598,6 +598,10 @@ contract Farm is Ownable, ReentrancyGuard {
     function deployLiquidity(
         uint256 amount
     ) external onlyFarmOwner nonReentrant whenNotPaused {
+        _deployLiquidity(amount);
+    }
+
+    function _deployLiquidity(uint256 amount) internal {
         require(
             amount > 0 && amount <= availableLiquidity(),
             "Farm: insufficient liquidity"
@@ -619,6 +623,10 @@ contract Farm is Ownable, ReentrancyGuard {
     function withdrawFromStrategy(
         uint256 amount
     ) external onlyFarmOwner nonReentrant whenNotPaused {
+        _withdrawFromStrategy(amount);
+    }
+
+    function _withdrawFromStrategy(uint256 amount) internal {
         require(
             amount > 0 && amount <= deployedLiquidity,
             "Farm: insufficient deployed liquidity"
