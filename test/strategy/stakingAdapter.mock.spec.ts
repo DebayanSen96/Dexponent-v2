@@ -9,7 +9,7 @@ describe("MockStakingAdapter", function () {
 
   before(async () => {
     [deployer] = await ethers.getSigners();
-    addresses = await loadAddresses(network.name);
+    addresses = await loadAddresses();
   });
 
   it("deposit/withdraw updates totals and balances", async () => {
@@ -45,7 +45,9 @@ describe("MockStakingAdapter", function () {
 
     const pending = await adapter.pendingRewards(await dxp.getAddress());
     expect(pending).to.equal(0);
-    const harvested = await adapter.harvest(await dxp.getAddress());
-    expect(harvested).to.equal(0);
+    const harvestTx = await adapter.harvest(await dxp.getAddress());
+    await harvestTx.wait();
+    const pendingAfter = await adapter.pendingRewards(await dxp.getAddress());
+    expect(pendingAfter).to.equal(0);
   });
 });

@@ -6,16 +6,56 @@ import { loadAddresses } from "../utils/loadAddresses";
 describe("RootFarm owner flows", function () {
   let addresses: any;
   let deployer: any;
+  let ownerSigner: any;
 
   before(async () => {
     [deployer] = await ethers.getSigners();
-    addresses = await loadAddresses(network.name);
+    addresses = await loadAddresses();
   });
 
   it("deploy/withdraw liquidity and rebalance as farmOwner", async () => {
     const farm = await ethers.getContractAt("RootFarm", addresses.RootFarm);
     const dxp = await ethers.getContractAt("DXPToken", addresses.DXPToken);
-    const strat = await ethers.getContractAt("RootAnchorMMStrategy", addresses.RootAnchorMMStrategy);
+
+    const farmOwnerAddr = await farm.farmOwner();
+    ownerSigner = deployer.address.toLowerCase() === farmOwnerAddr.toLowerCase()
+      ? deployer
+      : await ethers.getImpersonatedSigner(farmOwnerAddr);
+    if (ownerSigner.address.toLowerCase() !== deployer.address.toLowerCase()) {
+      const bal = await ethers.provider.getBalance(ownerSigner.address);
+      if (bal === 0n) {
+        await deployer.sendTransaction({ to: ownerSigner.address, value: parseEther("1") });
+      }
+    }
+
+    const Adapter = await ethers.getContractFactory("MockStakingAdapter");
+    const adapter = await Adapter.deploy();
+    await adapter.waitForDeployment();
+
+    const StakingStrategy = await ethers.getContractFactory("StakingStrategy");
+    const adapters = [await adapter.getAddress()];
+    const weights = [10000];
+    const stakingStrat = await StakingStrategy.deploy(
+      await farm.getAddress(),
+      await dxp.getAddress(),
+      await dxp.getAddress(),
+      0,
+      0,
+      parseEther("1000000000"),
+      0,
+      false,
+      80,
+      0,
+      0,
+      20,
+      adapters,
+      weights
+    );
+    await stakingStrat.waitForDeployment();
+
+    await farm.connect(ownerSigner).pause();
+    await farm.connect(ownerSigner).migrateStrategy(await stakingStrat.getAddress());
+    await farm.connect(ownerSigner).unpause();
 
     const depositAmt = parseEther("1000");
     await dxp.connect(deployer).approve(await farm.getAddress(), depositAmt);
@@ -23,36 +63,46 @@ describe("RootFarm owner flows", function () {
     await farm.connect(deployer).provideLiquidity(depositAmt, BigInt(now + 60 * 60 * 24 * 35));
 
     const availBefore = await farm.availableLiquidity();
-    const tvlBefore = await strat.getStrategyTVL();
+    const tvlBefore = await stakingStrat.getStrategyTVL();
 
     const toDeploy = depositAmt / 2n;
-    await farm.connect(deployer).deployLiquidity(toDeploy);
+    await farm.connect(ownerSigner).deployLiquidity(toDeploy);
     const availAfterDeploy = await farm.availableLiquidity();
-    const tvlAfterDeploy = await strat.getStrategyTVL();
+    const tvlAfterDeploy = await stakingStrat.getStrategyTVL();
 
     expect(availAfterDeploy).to.equal(availBefore - toDeploy);
     expect(tvlAfterDeploy).to.equal(tvlBefore + toDeploy);
 
     const toWithdraw = toDeploy / 2n;
-    await farm.connect(deployer).withdrawFromStrategy(toWithdraw);
+    await farm.connect(ownerSigner).withdrawFromStrategy(toWithdraw);
     const availAfterW = await farm.availableLiquidity();
-    const tvlAfterW = await strat.getStrategyTVL();
+    const tvlAfterW = await stakingStrat.getStrategyTVL();
 
     expect(availAfterW).to.equal(availAfterDeploy + toWithdraw);
     expect(tvlAfterW).to.equal(tvlAfterDeploy - toWithdraw);
 
-    await expect(farm.connect(deployer).rebalanceStrategy()).to.not.be.reverted;
-    await expect(farm.connect(deployer).rebalanceStrategy("0x")).to.not.be.reverted;
+    await expect(farm.connect(ownerSigner)["rebalanceStrategy()"]()).to.not.be.reverted;
+    await expect(farm.connect(ownerSigner)["rebalanceStrategy(bytes)"]("0x")).to.not.be.reverted;
   });
 
   it("start epoch, set reserves and rebalance to target", async () => {
     const farm = await ethers.getContractAt("RootFarm", addresses.RootFarm);
+    const farmOwnerAddr = await farm.farmOwner();
+    ownerSigner = deployer.address.toLowerCase() === farmOwnerAddr.toLowerCase()
+      ? deployer
+      : await ethers.getImpersonatedSigner(farmOwnerAddr);
+    if (ownerSigner.address.toLowerCase() !== deployer.address.toLowerCase()) {
+      const bal = await ethers.provider.getBalance(ownerSigner.address);
+      if (bal === 0n) {
+        await deployer.sendTransaction({ to: ownerSigner.address, value: parseEther("1") });
+      }
+    }
 
-    await farm.connect(deployer).setReserveRatioBps(2000);
-    await farm.connect(deployer).setMinReserve(parseEther("100"));
-    await farm.connect(deployer).startEpoch(3000, parseEther("50"));
+    await farm.connect(ownerSigner).setReserveRatioBps(2000);
+    await farm.connect(ownerSigner).setMinReserve(parseEther("100"));
+    await farm.connect(ownerSigner).startEpoch(3000, parseEther("50"));
 
-    await expect(farm.connect(deployer).rebalanceToTarget()).to.not.be.reverted;
+    await expect(farm.connect(ownerSigner).rebalanceToTarget()).to.not.be.reverted;
   });
 
   it("pause/unpause gates LP actions", async () => {
@@ -78,14 +128,38 @@ describe("RootFarm owner flows", function () {
     const farm = await ethers.getContractAt("RootFarm", addresses.RootFarm);
     const dxp = await ethers.getContractAt("DXPToken", addresses.DXPToken);
 
-    await farm.connect(deployer).pause();
+    const farmOwnerAddr = await farm.farmOwner();
+    ownerSigner = deployer.address.toLowerCase() === farmOwnerAddr.toLowerCase()
+      ? deployer
+      : await ethers.getImpersonatedSigner(farmOwnerAddr);
 
-    const Strat = await ethers.getContractFactory("RootAnchorMMStrategy");
-    const newStrat = await Strat.deploy(await farm.getAddress(), await dxp.getAddress());
+    await farm.connect(ownerSigner).pause();
+
+    const Adapter = await ethers.getContractFactory("MockStakingAdapter");
+    const adapter = await Adapter.deploy();
+    await adapter.waitForDeployment();
+
+    const StakingStrategy = await ethers.getContractFactory("StakingStrategy");
+    const adapters = [await adapter.getAddress()];
+    const weights = [10000];
+    const newStrat = await StakingStrategy.deploy(
+      await farm.getAddress(),
+      await dxp.getAddress(),
+      await dxp.getAddress(),
+      0,
+      0,
+      parseEther("1000000000"),
+      0,
+      false,
+      80,
+      0,
+      0,
+      20,
+      adapters,
+      weights
+    );
     await newStrat.waitForDeployment();
-    await newStrat.initialize(3000, BigInt("79228162514264337593543950336"), parseEther("100"), parseEther("50"),
-      "0xE358a174c91C01E3804b96a34f4839750F062bD9", addresses.MockLiquidityManager, parseEther("1"), 3600);
 
-    await expect(farm.connect(deployer).migrateStrategy(await newStrat.getAddress())).to.not.be.reverted;
+    await expect(farm.connect(ownerSigner).migrateStrategy(await newStrat.getAddress())).to.not.be.reverted;
   });
 });
