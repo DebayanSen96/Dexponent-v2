@@ -69,7 +69,6 @@ Private Key: 0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e
 WARNING: These accounts, and their private keys, are publicly known.
 Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 
-[32mhardhat_addCompilationResult[0m
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
 [32mhardhat_metadata (2)[0m
@@ -123,7 +122,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            2093500 of 30000000
-  Block #1:            0xd877389c85bf224c04d4c58138bad7973d6a52e451e7c2293a6c6c8c37eb02b4
+  Block #1:            0x694113209d264c23e91d872432ba46e5042d037b19e7988be4275f71264db62b
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -157,7 +156,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            441319 of 30000000
-  Block #2:            0xd12c71ae0dc46e9d3273d02d0d579bac28726099bef064ee2bd4a5ce8e0e8ef8
+  Block #2:            0xe51f467406752278bb0c754fe2cee6ec34cf45bd9a6ab5115153f6a8bd6d365f
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -191,7 +190,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            2710318 of 30000000
-  Block #3:            0xef52db2e6e91aafee0bc9019a8fb0c098ccf95441747b420e7b4c68723d6da6f
+  Block #3:            0x598d8a82ad3fc762bb05ed13f19096e1bf10ea29d1d4fba87f4cbf720225afd0
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -225,7 +224,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            3002177 of 30000000
-  Block #4:            0x5e13b668ded45e711593900c487b3bc7630777b6da825d2383cdf73ec800f389
+  Block #4:            0xb37fab794f0ff73fb21f4b1f0035ac3483e55362fb4f6b230fea31b0899b2973
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -259,7 +258,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            487632 of 30000000
-  Block #5:            0x7b0494d68086be4dd7bee207f93dd2f9705c0a3e5080ffb12b9d0ddcd53a0949
+  Block #5:            0xe2466ae2c7c9474ac47bdfd02253e36ac23925495af47e7e5eff1b6d8ccd8d46
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -293,7 +292,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            5499888 of 30000000
-  Block #6:            0xfddc05597bb47c83c485905fd0b9b3087838fef89c1af4aab21e8c26d57db22c
+  Block #6:            0xaf16d96c29fe1c919c0f86e347b4a7f52d443b4ae53b55f278ae576bf957ec9e
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -306,7 +305,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   To:                  0xdc64a140aa3e981100a9beca4e685f962f0cf6c9
   Value:               0 ETH
   Gas used:            28509 of 30000000
-  Block #7:            0x4f503f9714d6c1ab0fcdcfafb1ef28bf7bc19bf1b804a8702f350428ad0a2039
+  Block #7:            0xd1237a4169a3b4d82bb497a806bba2d185bfeac1e1ad0944f7be9add7baec068
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -340,7 +339,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            298277 of 30000000
-  Block #8:            0x26aeda3c0323c5a2c24308e46ee0a6d2a58721f6b3e85a7c305d1354a2b5dc1e
+  Block #8:            0x4ccda83918530faf0dc51c8039e958db90ba9827eb6068fffdbda8276bc11b1b
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -374,7 +373,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            340627 of 30000000
-  Block #9:            0xd3a6bb7d539802b64d79bedcd3e2d90bd9bdf7ef55505a1b67bb1a54295107d6
+  Block #9:            0x0584cec4759906132fad7c6aff2226dcd2229593ee52a0cd53892ca51e9afcd7
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -413,7 +412,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            768635 of 30000000
-  Block #10:           0xda17880121ca00c707ba8474029e126d9d53e058c9e9387f99d505610cad6c54
+  Block #10:           0x962e9c1de7c437b5a6ede72f18db765d9b90745c28cfb06fbf73dae0ffc77526
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -426,7 +425,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
   Value:               0 ETH
   Gas used:            48019 of 30000000
-  Block #11:           0x5adde459b0fbc2c31ac66632707d68aa3381db34a7ec170fc1b9fca70c75eaa7
+  Block #11:           0x6024516abadbbd58700e591532f836c81027bc82b5fa9a5b7229d276519986b9
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -444,7 +443,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
   Value:               0 ETH
   Gas used:            46961 of 30000000
-  Block #12:           0xf4d6698569d27f69f343ff1e52b6c8aa4c367ba6b970c20bc66637903037a482
+  Block #12:           0x3a684b40d85d9e562c9c6a47c2530b02c56f227358f310902fd10c172aff7402
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -462,7 +461,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
   Value:               0 ETH
   Gas used:            46169 of 30000000
-  Block #13:           0x0d426fe1ab86d34877f00428d14f57144d0634e3e88d56db22f1b80d314c8d00
+  Block #13:           0x27dc8760496fe1dfb9412f7dca961e3f6e77697d0eeddb4b1fab6779d65a7a47
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -506,7 +505,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            2466752 of 30000000
-  Block #14:           0xff2677a9f721aacce3a0298faef74266d8b1f20522becef385ba87b86c85ac47
+  Block #14:           0x37d58993e26bd16f15191c5e7887fb5dd9be21aa0fc218ed7840cacb4230e7ee
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -519,7 +518,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
   Value:               0 ETH
   Gas used:            182517 of 30000000
-  Block #15:           0xac86ea5a0a83fcd2c5933333af89a6c0698d58f4d81685b5392228b52eaf4de8
+  Block #15:           0xff45dbb1358470341995056bf5c391d1a1d0ef8752d6c2f94692ae114c451cac
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -553,7 +552,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            1422847 of 30000000
-  Block #16:           0x3cc5ea607c16fd9558ef5e0e056b192f0c1bcb2bf67b7cc10e1344821762ee35
+  Block #16:           0x534edd5fce212b39e4d5a80f5b548aa30d0b3d716947d84fc6d1a0df92450cd2
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -566,7 +565,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   To:                  0x0b306bf915c4d645ff596e518faf3f9669b97016
   Value:               0 ETH
   Gas used:            218100 of 30000000
-  Block #17:           0x1fff75099ec764f3c36339e8ebae1a2ab3196c5d4cf333df428937a254ea3e2c
+  Block #17:           0x0738f7f5e1256c68383053a2d4681b2a24c0e1c88087ef9e7828154f7510e873
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -600,7 +599,184 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
   To:                  0x0dcd1bf9a1b36ce34237eeafef220932846bcd82
   Value:               0 ETH
   Gas used:            46922 of 30000000
-  Block #18:           0x4151108b0b8b773ee03a3c36040fb7caa7267f8f87babacc24b4dc4a84348ce6
+  Block #18:           0x6e61560887b836ebb62d00da90db6a797b58b4d3aff06520f7c60dc1638dcfa1
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_call[0m
+  Contract call:       FarmFactory#currentFarmId
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0xdc64a140aa3e981100a9beca4e685f962f0cf6c9
+
+[32meth_call[0m
+  Contract call:       ProtocolCore#approvedFarmOwners
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       ProtocolCore#setApprovedFarmOwner
+  Transaction:         0xff19974f20308239c524a9cfc0a7ebcf8078653ae6f2f57b6ae979724a3d7476
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
+  Value:               0 ETH
+  Gas used:            48924 of 30000000
+  Block #19:           0xf4036eda592fd3c6cd5f4d12006d7af54bb88330266af0dd9259a4f3c1e55a46
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       ProtocolCore#createApprovedFarm
+  Transaction:         0x198f17408049dbf4f849681b50c168fb24622ff8abe8bf8401e636fea118152f
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
+  Value:               0 ETH
+  Gas used:            3560217 of 30000000
+  Block #20:           0x59828a0950bd1aad54d7a7be4288244c904398817fd95d05ee982eed5bd05163
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_call[0m
+  Contract call:       ProtocolCore#farmAddressOf
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
+
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract deployment: MockStakingAdapter
+  Contract address:    0xc6e7df5e7b4f2a278906862b61205850344d4e7d
+  Transaction:         0x3a7c802274e257dddcaa5a92b56ce5c80a01aac41f09ed8510c4615578e6e72c
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            245825 of 30000000
+  Block #21:           0x2261559c3c9c098292c229dc7b3ce9b7368ba8a6be1329d757411c2f9c3a98db
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract deployment: MockStakingAdapter
+  Contract address:    0x59b670e9fa9d0a427751af201d676719a970857b
+  Transaction:         0xd74e0523eb2d9e67fd3cb3a05c99d9bdd58eb17e3019aec5d2f766eba2163fed
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            245825 of 30000000
+  Block #22:           0x2b70b2cdcac70593a1489797be78e025c1372b128c78301d6b0259abf2fa53fc
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract deployment: StakingStrategy
+  Contract address:    0x4ed7c70f96b99c776995fb64377f0d4ab3b0e1c1
+  Transaction:         0x5fe5dd72ecdecda150a1dab52d981b9baa83b1f6beb05c4368a9d6991d3d4502
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            1894515 of 30000000
+  Block #23:           0x042a0baf9d7594f459ca2761023be3d54b0a1c2b883a3891d31d7baacc671f53
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#updateStrategy
+  Transaction:         0xfc81ebd845e1f1089d6976625ad9af016d56eb546685657dc67b4617dbec25de
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x93055596da6c97c8dc0e08bce9c44ba3738176e0
+  Value:               0 ETH
+  Gas used:            46900 of 30000000
+  Block #24:           0x5c3cbaa3c39c4e9b12956bd1b76f3d21ff7c104513fb3f2c98a3b579741420c1
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -629,12 +805,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#transfer
-  Transaction:         0xcc1e08f4dfbd431453cf095c755b5069fc59d70cb12f892ab6963c1201ca4401
+  Transaction:         0xc4d4b86988b4f631ffd83c3fde0501b8e5560d05417fd5c77c429214714e135c
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   To:                  0x5fbdb2315678afecb367f032d93f642f64180aa3
   Value:               0 ETH
   Gas used:            26929 of 30000000
-  Block #19:           0xe9333bbb66163b0a0cc8169930698f5cec0d58090bc10af9ee9695998985b778
+  Block #25:           0x20630c62a72e9ea9a68f6584cac330b0b806b8197e75fbb29b97a91e783ee17d
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -647,12 +823,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#transfer
-  Transaction:         0xc42cc6d09442acc2d3042e8351a7673835c2fba3efd63c7ed809f9dbcc22dd46
+  Transaction:         0x977e24ea085135c37622b2ff492065cd23d0eed598f57cb11205373193ee3388
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   To:                  0x5fbdb2315678afecb367f032d93f642f64180aa3
   Value:               0 ETH
   Gas used:            51641 of 30000000
-  Block #20:           0x146295086f610ccd4f5daff76e866c0ede0261a2f5a7f12b91716370a64b3688
+  Block #26:           0xb1e84f6e0a94ca944139884170957e486897e8c660c52282ff69f9c76966a303
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -660,12 +836,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#transferOwnership
-  Transaction:         0xd318bd781608b3a0ea06806022b77dce3ba133e997d13185af5caab2910fc6f0
+  Transaction:         0x0fdfc5e2b7b94760e505253e983f9d4964d4f7c65c031bd5051561f3b3474ac1
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   To:                  0x5fbdb2315678afecb367f032d93f642f64180aa3
   Value:               0 ETH
   Gas used:            29065 of 30000000
-  Block #21:           0x882a10441099d0d87b6de402700e63a998a59cb5a7cc5adf253551a75de6c123
+  Block #27:           0x2e805d2fba2cd220aa2d474f36bc3efb56d4ba0dea3cfc4abfc350e10572454d
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -717,12 +893,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: DXPToken
-  Contract address:    0x59b670e9fa9d0a427751af201d676719a970857b
-  Transaction:         0xb0456133e8d7b589e312d7856f3b7eaf0bb3fa73331fdc27fb1d390a0a11b046
+  Contract address:    0x09635f643e140090a9a8dcd712ed6285858cebef
+  Transaction:         0x355890c14296198746481967d05de4ccf410a568275c41aca3dcc2cc9bd46afd
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            2093500 of 30000000
-  Block #22:           0xfc28097162f1ab8b811c41c4f659daa5730c3a8ee1a0a93541a624e6202cd2af
+  Block #28:           0x3cacdf2fe8baf1cd27bc796033bb8d25d454473b179b72b111b6c7c015e98323
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -751,12 +927,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: DXPFaucet
-  Contract address:    0x4ed7c70f96b99c776995fb64377f0d4ab3b0e1c1
-  Transaction:         0xa7f807d39388bffba19ed2eca16f588074ef2c44edaf90aac56cb17c0cf43682
+  Contract address:    0xc5a5c42992decbae36851359345fe25997f5c42d
+  Transaction:         0x3a3933729f5a61a657242eabf2e0990f521db1799cbc23a8eeae67d9a1562b22
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            441319 of 30000000
-  Block #23:           0xe577e533c2fd938e14ec1f0b799d6358996677f56095039654b5d7833c25fe77
+  Gas used:            441307 of 30000000
+  Block #29:           0x9d36f9fa4afc36663bf7be9ad3f517ff7b5fae49624b65e58e934ba231bd103f
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -785,12 +961,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: FarmDeployer
-  Contract address:    0x322813fd9a801c5507c9de605d63cea4f2ce6c44
-  Transaction:         0xa81b53b7ead4aa40a7f05c41bd70c42ea8119515ecbcbe0f12c92a630fa72d05
+  Contract address:    0x67d269191c92caf3cd7723f116c85e6e9bf55933
+  Transaction:         0x5a98ca378428fcdb32aade820e0b951822d69cddbf39b7110721d068345c20a4
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            2710318 of 30000000
-  Block #24:           0xabe6031edd1540f89c3682f387f77d978742adcbbadf57e1cb6b56ecc9fc676e
+  Block #30:           0x8b6eb8d728c2d8aab9dec800a2e9910fb19e4dfedbfd58ec0a04a5ae086d770b
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -819,12 +995,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: RestakeFarmDeployer
-  Contract address:    0xa85233c63b9ee964add6f2cffe00fd84eb32338f
-  Transaction:         0x9b72d95e4bee59f3911bd70ec215ff4cf97f610393eacb698baeee514fce6c78
+  Contract address:    0xe6e340d132b5f46d1e472debcd681b2abc16e57e
+  Transaction:         0x293f1bf0c503a56f55d847c05cc23e4896bae872d87d7b92f22c8873d1e84255
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            3002177 of 30000000
-  Block #25:           0xc02f41fd9e93101aec6a57949a82f2727506f26eb92c7f5909ffaa603417767c
+  Block #31:           0xedb885f117b1234f5d31b4149445b1f37574f155fbed8d1c9caf146f16daf2d4
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -853,12 +1029,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: FarmFactory
-  Contract address:    0x4a679253410272dd5232b3ff7cf5dbb88f295319
-  Transaction:         0x8baba7d60dbc67e58b12b81d3e75723068d1e1262b4a062c8e086c77c392169b
+  Contract address:    0xc3e53f4d16ae77db1c982e75a937b9f60fe63690
+  Transaction:         0x45253e424feba27b41923c84892a7e2b89a10d1a46e62aff36ca3e34ceb23283
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            487620 of 30000000
-  Block #26:           0x4c8e0afac73a5723290a7cb04766ef96849cff7e560b1c3400e5294904fd2c1b
+  Gas used:            487632 of 30000000
+  Block #32:           0x853fc8fdcbdd447e24e5bc75c4fa1d802341be2ea9d8a4e973dfe2f4ecce18f7
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -887,12 +1063,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: ProtocolCore
-  Contract address:    0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
-  Transaction:         0x539bf5ab2e5a69c9ad8541a50e5aec74b64c50686078e3f5d1645dd55c835999
+  Contract address:    0x84ea74d481ee0a5332c457a4d796187f6ba67feb
+  Transaction:         0x3ffbc101e989a9d7148219b6cc7ef6c83e47b512b6b1b2b993b58f92a09679fa
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            5499900 of 30000000
-  Block #27:           0xe34750e6007450fc938ec89f48e8f713d790e2f29112f1c17588ce91dd998b2a
+  Gas used:            5499888 of 30000000
+  Block #33:           0x3f20953d8002b6feefce22de74da48e547e1948f3bb2d0118da4c0ef8b9fd703
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -900,12 +1076,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       FarmFactory#transferOwnership
-  Transaction:         0xb525f19d9f58c1103b28dd12e0fc98adfe093d043c9ceb79b72608f7458e8e6d
+  Transaction:         0x4e30aca0fc2ca28216859b478fd162cc75b637c4963f15b5fcbdb82392ee68df
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x4a679253410272dd5232b3ff7cf5dbb88f295319
+  To:                  0xc3e53f4d16ae77db1c982e75a937b9f60fe63690
   Value:               0 ETH
   Gas used:            28509 of 30000000
-  Block #28:           0x771c14ad60d8ccc7118b4866f9f131465c7b7b3d4cfce7969c3e9b876a9ed920
+  Block #34:           0x7759f683779a1cbe3b4df500faf026e1b1169aaaceea4acb8af5b88f9e6c5dd5
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -934,12 +1110,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: MockBridgeAdapter
-  Contract address:    0xc5a5c42992decbae36851359345fe25997f5c42d
-  Transaction:         0x89b03693a8b36c27a23d7b4dee6d07cb437132828e0c61aec3659348d485cb66
+  Contract address:    0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  Transaction:         0x83094a352677f0c0f8f01d8f5aa173bc36119ae5dd56eb31aea92ad404e08652
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            298277 of 30000000
-  Block #29:           0xe73b0638843beffa475e5fbcc63683e4cc9ae40b746d6eef22d007d5f782da8b
+  Block #35:           0xa6222af185c44547e13d88987a894063d32bea9f9e36e26a6d0c4afe77a5b26f
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -968,12 +1144,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: MockLiquidityManager
-  Contract address:    0x67d269191c92caf3cd7723f116c85e6e9bf55933
-  Transaction:         0xcb4a9b3333ab38762cf756f2a33ecf62ab9f299916df47082f34bc918d00949c
+  Contract address:    0x1613beb3b2c4f22ee086b2b38c1476a3ce7f78e8
+  Transaction:         0xf9b257bc9187ffbfe9b7962b1a3fc70b5aa215e78ea31747700670737a30ccfc
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            340627 of 30000000
-  Block #30:           0x599841ef9245931781dbebf2499e06ef85ff679603a01eab973efdfa551d01f6
+  Gas used:            340615 of 30000000
+  Block #36:           0x8d9b275fe6b20b1916a2790c7b0d98db0b7b04e6f5fd80ee527982caeda5f463
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1001,18 +1177,18 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       ProtocolCore#consensus
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: Consensus
-  Contract address:    0xe6e340d132b5f46d1e472debcd681b2abc16e57e
-  Transaction:         0x43db75ae7a10da128d8ffaa07a347676750f790a15576777a9e98b88f25af8b3
+  Contract address:    0x851356ae760d987e095750cceb3bc6014560891c
+  Transaction:         0xbd610e9969d479b33470661f7b116dc9d3d72dbc52319e671b58b51ba58570a7
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            768635 of 30000000
-  Block #31:           0xc809b4115f9965c23d5b06723f3d2191476f6ae9bebb728c7aa92c0b1da7e1f4
+  Block #37:           0xd33a1f11139aa0997c73b39de09c1ddcae2c0c13b137c7c64a52703b4fb9183b
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1020,60 +1196,60 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       ProtocolCore#setConsensusModule
-  Transaction:         0x412cb4ec0455f0b3f1b2741c25322204656fc6c12f3ada80f941e8385c1445df
+  Transaction:         0xcbe968cb47751b05c11885e2db6a50edb173aba7919da6d8d5dc9a6e692845b6
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
   Value:               0 ETH
   Gas used:            48019 of 30000000
-  Block #32:           0x0b4ce1796f9710c6ecb1cb26569b56480f890ae5ce8ea8f22285bbcea15ef366
+  Block #38:           0x984daca27d2e5963eac40625fa4f742968d872f5d4a8b606a29fd15954e22637
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
 [32meth_call[0m
   Contract call:       ProtocolCore#bridgeAdapter
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       ProtocolCore#setBridgingAdaptor
-  Transaction:         0xc185a2df7d83eff50b9686fc28714c0ed7e21b8b56962495ab276f4126e72812
+  Transaction:         0x89bbae071680ae50e5bbde9be1f11054dc0ffffcd996d2a62c7ad7bb10d44d2c
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
   Value:               0 ETH
   Gas used:            46961 of 30000000
-  Block #33:           0x2171e6e71dbee840b045ccdd2fe872304787f220efc98481be2a4d650a8ad0e2
+  Block #39:           0x92b0e63160ec3f4e4c2a1feeb69a4d6bd3898f2a89f8e248deef68ef72059d39
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
 [32meth_call[0m
   Contract call:       ProtocolCore#liquidityManager
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       ProtocolCore#setLiquidityManager
-  Transaction:         0xb4cb4cfcf7d8dea0f297fc31de25150570b393ba345edbc2bbc76c3b04e733b8
+  Transaction:         0x5cd1c48e353cd17b3e295d142466a3e5245ee03e4e1963a59ae8458d9026a911
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
   Value:               0 ETH
   Gas used:            46169 of 30000000
-  Block #34:           0x6bf17ef2823ae754819201e0c1af68c2399754490a7ebaf99c22c9f77c319f03
+  Block #40:           0x95f527ba6aa6fd624c0913c830ba5bdc124a96ce6be8a7186287f20071ba90cc
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
 [32meth_call[0m
   Contract call:       ProtocolCore#rootFarm
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_call[0m
   Contract call:       ProtocolCore#vdxpToken
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -1100,12 +1276,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: RootFarm
-  Contract address:    0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
-  Transaction:         0x49cedb87f17713d446ebd62b729884b7b563732fa22a08651918958daf9636f2
+  Contract address:    0x70e0ba845a1a0f2da3359c97e0285013525ffc49
+  Transaction:         0x55048956e094d295588cd46258d3d4a3b2ee12046e355d4ef6c56f764eb054c2
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            2466728 of 30000000
-  Block #35:           0x23443665fb6ceebdcfa608ffc3a645096ea1af0ef4922cddd77517fe3c9c7fd9
+  Gas used:            2466740 of 30000000
+  Block #41:           0xe4d8c953dacdf013bc33538670d19a71a0ebf5aa538fdfbd19f4ebf59d42542d
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1113,12 +1289,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       ProtocolCore#setRootFarm
-  Transaction:         0x154e427da86937fbab57b61efe4f2e2efae6a51bc1276e9245665b0e54ffe61d
+  Transaction:         0xf67c90586c410882592121c19f8c8308869bb0b999186aa0b9fb3a870f38ec71
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
   Value:               0 ETH
   Gas used:            182517 of 30000000
-  Block #36:           0x4ee75dcb44fa510d64eade78014d40a5a5cb288a85c9c746a235ac3c6786f0b4
+  Block #42:           0xeb52e970294a80c186ed60d3fdf9f0f275340bf0e852842c6419936b8040898e
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1147,12 +1323,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: RootAnchorMMStrategy
-  Contract address:    0x851356ae760d987e095750cceb3bc6014560891c
-  Transaction:         0x7134d20f6876d324334ad07011559a7f5ea58f125cdbe6920b4be605d857537f
+  Contract address:    0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  Transaction:         0x520bbc6829ba4d0a780535132143ba63029530c5698e0897e36fff5b8cda4011
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            1422847 of 30000000
-  Block #37:           0x2821d5f618d1dacf5080b1b77f8903552c289a9e81bca6ff9a940826073238ef
+  Gas used:            1422835 of 30000000
+  Block #43:           0xd5d04a8798a9655ed8f30dc146d36d32ce01544965bb2b8a3b40aa3e80460d0f
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1160,12 +1336,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootAnchorMMStrategy#initialize
-  Transaction:         0x44ea6d3b6140c6c260114cdacab912c0aa2ca2a2c7f8bdad09ed185afa8967d4
+  Transaction:         0xacaacee175efca72e3f26798d63c43df9546511f9a9af976f09a41c2bf68ca01
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x851356ae760d987e095750cceb3bc6014560891c
+  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
   Value:               0 ETH
   Gas used:            218100 of 30000000
-  Block #38:           0x14ab6033ce71645f0ded5b6b8f431225ece4a485b66e14adaff4349717ae9565
+  Block #44:           0x10bb71260d91312fd99d283d830c951a43aa664e1106c314da00ecaa6fb864f7
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1194,12 +1370,189 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#updateStrategy
-  Transaction:         0x40ab39b17856fec6067eea32d8a98ead9a3e080faab0fefe58eed3ac7d3e1a1d
+  Transaction:         0xd0b471b536b31e3da5bbe4c85fb6e9b1cdbc283db996e23eb6a87df68a1438aa
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            46922 of 30000000
-  Block #39:           0x271a90c4eee484d51b310aeb4ee9f233f516565d9318cb6768335c71a9c3e1cf
+  Block #45:           0x18b574bde14e9caaf311095c130634c447e27c9c9834201f155a64b5baf71fd1
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_call[0m
+  Contract call:       FarmFactory#currentFarmId
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0xc3e53f4d16ae77db1c982e75a937b9f60fe63690
+
+[32meth_call[0m
+  Contract call:       ProtocolCore#approvedFarmOwners
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       ProtocolCore#setApprovedFarmOwner
+  Transaction:         0xb2efafc0384258728e8aa678ad017076a98fbfb995f00a50079332f40d86ae4e
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
+  Value:               0 ETH
+  Gas used:            48924 of 30000000
+  Block #46:           0x56f146e7e578556c68d244a69a78da6948c45cf9f82b9545bc8619e857cae8f7
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       ProtocolCore#createApprovedFarm
+  Transaction:         0x0c3477b5a84ab03db434e308d3c37fde057dd88cb997ded29871fce9bca76391
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
+  Value:               0 ETH
+  Gas used:            3560205 of 30000000
+  Block #47:           0x2a24bd9ed2a6a95227c5fc0e740caea34286f62b4adc99a245c2eb7325019f48
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_call[0m
+  Contract call:       ProtocolCore#farmAddressOf
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
+
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract deployment: MockStakingAdapter
+  Contract address:    0x36c02da8a0983159322a80ffe9f24b1acff8b570
+  Transaction:         0xb905714996e4e81ce51882fbd45dd061216b1ed7005fe5b52ec71e5a71b4686b
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            245825 of 30000000
+  Block #48:           0x54e4b341581c5f02897eea24dafd6466979ba35398e3d3527445850034e441be
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract deployment: MockStakingAdapter
+  Contract address:    0x809d550fca64d94bd9f66e60752a544199cfac3d
+  Transaction:         0xfa77608b93924b43d3e2c507182f8d3fd6ffbe74dd723cecb7a1fe4b4d19a190
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            245825 of 30000000
+  Block #49:           0x955f9e79c771a731ad4c4ae488e7b9f04c581992bb9920c15a51a0131a2efe42
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract deployment: StakingStrategy
+  Contract address:    0x4c5859f0f772848b2d91f1d83e2fe57935348029
+  Transaction:         0x58db46937deb61d2cd2b57a353dd49a89a2ce5fdbc698ec8bbd5420b9e070652
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            1894491 of 30000000
+  Block #50:           0x44f2c821b961c50cee07ae265e25ed21e17140b47d5e03919c4fc0e42c8d7d68
+
+[32meth_getTransactionByHash[0m
+[32meth_getTransactionReceipt[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#updateStrategy
+  Transaction:         0x40aa67f0dae697069206ca9e322847fa03e2dce7e8e057c5ca1a17554eec741f
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            46900 of 30000000
+  Block #51:           0x174e8066ec5d55223ca6225a7bf3964e91600cfcf3725c7129d32526160471bb
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1228,30 +1581,30 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#transfer
-  Transaction:         0xc99127b727efb9794958a2c68018c3fb3311a5c228d8764e18e1fee90c60570b
+  Transaction:         0x35a04e8ee3a3ac165149adc4461e8f5044b1f64d4dcb06bea92e067bd34c690d
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
   Value:               0 ETH
   Gas used:            26929 of 30000000
-  Block #40:           0x89bb6d3ce3821628ed2efd275cc7a4edaac62c4290ec51d4c6bfbaaf0f01d42d
+  Block #52:           0xe1634567ef129220880017394dac244627283ecfad896d5763005c29cf3124ba
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
 [32meth_call[0m
   Contract call:       DXPToken#balanceOf
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#transfer
-  Transaction:         0x5b6b964ef9b6e9aee3e3904c2cf9b40e4357c54e8fea8070828035408028a18c
+  Transaction:         0x5663afc43003574a91d46a96bdbe2dc7f35492ded178f5e0ad25ec4116779e77
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
   Value:               0 ETH
   Gas used:            51641 of 30000000
-  Block #41:           0x8bbeaad7464e7c290535cc289d3c75028e4161e391f5bd8f5e6038d7da0a215e
+  Block #53:           0x6c6a3cf2ce4000ef7fcf8754c2b9be189c648f919db33195d4400970cc32b154
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1259,12 +1612,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#transferOwnership
-  Transaction:         0xe3e55b681a7625ae366899f3c29421f2ad9a2f1f1f358fbb833aaf005a1d23a1
+  Transaction:         0x3c910cce7cfac35c9e908b97971ba01322cd5dab13ac94fbbabd3e147bcd3c09
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
   Value:               0 ETH
   Gas used:            29065 of 30000000
-  Block #42:           0x9dac3cf3d41c71a388d08f48aba4c746e3f93a7e81fc0863bf634ea28cd9b887
+  Block #54:           0xe7a69f94c37081b4e45e6a8097e7c3f3c299bda37bf6fc865f4dc3392eeb3383
 
 [32meth_getTransactionByHash[0m
 [32meth_getTransactionReceipt[0m
@@ -1317,12 +1670,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: Lock
-  Contract address:    0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
-  Transaction:         0xefc04247f8c34da8c0f2b4b66d094b914e187c1ecc1296637921674bd3266821
+  Contract address:    0x82e01223d51eb87e16a03e24687edf0f294da6f1
+  Transaction:         0xc9136a74f1ea2f177c53f85d2e03b9569250fdfa1f1d262116a4e19ad21e7c9f
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               1. gwei
   Gas used:            198338 of 30000000
-  Block #43:           0x04a64eed30096bf4dbd201b74171f606253bedc01c333940bf2f0e95bd474c10
+  Block #55:           0xd6db6fcc7613b1ee111dd25c4a029a13b738ce05c6f029f920c4d4ddee7df13a
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1331,14 +1684,14 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       Lock#unlockTime
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  To:                  0x82e01223d51eb87e16a03e24687edf0f294da6f1
 
 [32mevm_revert[0m
 [32mevm_snapshot[0m
 [32meth_call[0m
   Contract call:       Lock#owner
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  To:                  0x82e01223d51eb87e16a03e24687edf0f294da6f1
 
 [32mevm_revert[0m
 [32mevm_snapshot[0m
@@ -1369,11 +1722,11 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [31meth_sendTransaction[0m
   Contract deployment: Lock
-  Transaction:         0x998c582af7f9042bc0c1adb041eb6f68526703bf3e90bc98fcb31946f065482a
+  Transaction:         0x1b76cffb6fde72ac3d4daa713085e21329897e9ed8dfc03766f357bc4fbaeb1a
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               1 wei
   Gas used:            63695 of 30000000
-  Block #44:           0x75c5213c6c053bc63d022254cb144f228c4c35cb36090748b6eb87c74def04d4
+  Block #56:           0x988fc78f0dc48a3c1051943d4eaf73ae5e85f0ba5b2480eef34e76c693466224
 
   Error: reverted with reason string 'Unlock time should be in the future'
 
@@ -1383,12 +1736,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [31meth_sendTransaction[0m
   Contract call:       Lock#withdraw
-  Transaction:         0xcbd999714837d79cfdd7263b03e01b175f042d3225508488f8c912d7d709d77b
+  Transaction:         0x3bdfb1fa3c71f0009dbf7befed1967831e0ed7c35252efd0c8a8629b13c2be6e
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  To:                  0x82e01223d51eb87e16a03e24687edf0f294da6f1
   Value:               0 ETH
   Gas used:            23432 of 30000000
-  Block #44:           0x2a124114a8b45aea15f4c6285210f573316b58c344b167e9703afc1f37df6eb6
+  Block #56:           0xbf7c40c0644ddab13911c056835b49fdd4f3d3e7cd8bc1cc12fb75b595188411
 
   Error: reverted with reason string 'You can't withdraw yet'
 
@@ -1396,19 +1749,19 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32mevm_snapshot[0m
 [32mevm_setNextBlockTimestamp[0m
 [32mhardhat_mine[0m
-  Mined empty block #44 with base fee 4115498
+  Mined empty block #56 with base fee 928688
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_maxPriorityFeePerGas[0m
 [31meth_sendTransaction[0m
   Contract call:       Lock#withdraw
-  Transaction:         0xe0011ab1a710ac21fc4792c0bbe76554db01041341174357892aec65fd621c6f
+  Transaction:         0x70d5b5a9b9ab35d2b553fdbcd1ca2f7793dc6cc749af32cc90004004ab9c6c86
   From:                0x70997970c51812dc3a010c7d01b50e0d17dc79c8
-  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  To:                  0x82e01223d51eb87e16a03e24687edf0f294da6f1
   Value:               0 ETH
   Gas used:            25577 of 30000000
-  Block #45:           0xc8a48c4bc26bbeab9a6c8cc06786364de631d3ab97e83066a954a15673a64a16
+  Block #57:           0x728eb8f58f8578cdf5683d5f0969a8eb047877f6510fa47cc4670c5447d3c340
 
   Error: reverted with reason string 'You aren't the owner'
 
@@ -1416,19 +1769,19 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32mevm_snapshot[0m
 [32mevm_setNextBlockTimestamp[0m
 [32mhardhat_mine[0m
-  Mined empty block #44 with base fee 4115498
+  Mined empty block #56 with base fee 928688
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_maxPriorityFeePerGas[0m
 [32meth_sendTransaction[0m
   Contract call:       Lock#withdraw
-  Transaction:         0x5bf6905e110c9c264bb64494eac0fcf228a03ca82d0bd701ec790112bc42405b
+  Transaction:         0xbcf55b754f582f33c1d27d9e94abd54cc71fa8935cebdaac2abc7f92675d788d
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  To:                  0x82e01223d51eb87e16a03e24687edf0f294da6f1
   Value:               0 ETH
   Gas used:            33656 of 30000000
-  Block #45:           0x0be65e4acc43db4dd05e16b7f6c90aedefc6b3fe9c57f8240cfdd816b6344c0d
+  Block #57:           0x16a87c6932586413a9f4218eba8188aff6e0849957311aad720f92cbc4c066c7
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1438,19 +1791,19 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32mevm_snapshot[0m
 [32mevm_setNextBlockTimestamp[0m
 [32mhardhat_mine[0m
-  Mined empty block #44 with base fee 4115498
+  Mined empty block #56 with base fee 928688
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_maxPriorityFeePerGas[0m
 [32meth_sendTransaction[0m
   Contract call:       Lock#withdraw
-  Transaction:         0x5bf6905e110c9c264bb64494eac0fcf228a03ca82d0bd701ec790112bc42405b
+  Transaction:         0xbcf55b754f582f33c1d27d9e94abd54cc71fa8935cebdaac2abc7f92675d788d
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  To:                  0x82e01223d51eb87e16a03e24687edf0f294da6f1
   Value:               0 ETH
   Gas used:            33656 of 30000000
-  Block #45:           0x0be65e4acc43db4dd05e16b7f6c90aedefc6b3fe9c57f8240cfdd816b6344c0d
+  Block #57:           0x16a87c6932586413a9f4218eba8188aff6e0849957311aad720f92cbc4c066c7
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1460,19 +1813,19 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32mevm_snapshot[0m
 [32mevm_setNextBlockTimestamp[0m
 [32mhardhat_mine[0m
-  Mined empty block #44 with base fee 4115498
+  Mined empty block #56 with base fee 928688
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_maxPriorityFeePerGas[0m
 [32meth_sendTransaction[0m
   Contract call:       Lock#withdraw
-  Transaction:         0x5bf6905e110c9c264bb64494eac0fcf228a03ca82d0bd701ec790112bc42405b
+  Transaction:         0xbcf55b754f582f33c1d27d9e94abd54cc71fa8935cebdaac2abc7f92675d788d
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
+  To:                  0x82e01223d51eb87e16a03e24687edf0f294da6f1
   Value:               0 ETH
   Gas used:            33656 of 30000000
-  Block #45:           0x0be65e4acc43db4dd05e16b7f6c90aedefc6b3fe9c57f8240cfdd816b6344c0d
+  Block #57:           0x16a87c6932586413a9f4218eba8188aff6e0849957311aad720f92cbc4c066c7
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1548,9 +1901,580 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32mhardhat_metadata (19)[0m
 [32mhardhat_metadata (20)[0m
 [32meth_call[0m
+  Contract call:       Farm#farmOwner
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_call[0m
+  Contract call:       Farm#claimToken
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       DXPToken#approve
+  Transaction:         0x521855e9aa1568a81659147103a1d9753a0b54939f5fb9388344dedd25ddc7f2
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
+  Value:               0 ETH
+  Gas used:            46021 of 30000000
+  Block #58:           0x8b46c7e396bd6a83ccf395ff7eb290265bc45194c4d7c2af51cf1d8ac8923def
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_getBlockByNumber[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#provideLiquidity
+  Transaction:         0xdeb63740f79f4f18b9540423e40387b2101c792e183c0ae6f118ff95ae1c977b
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            243800 of 30000000
+  Block #59:           0xefb6c770258544e2f0fed306fd5b465d2c6af84acacea2a673c060949fc7fa9f
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_call[0m
+  Contract call:       FarmClaimToken#balanceOf
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0xda1a2e33bd9e8ae3641a61ab72f137e61a7edf6e
+
+[32meth_call[0m
+  Contract call:       Farm#strategy
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_call[0m
+  Contract call:       StakingStrategy#getStrategyTVL
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x4c5859f0f772848b2d91f1d83e2fe57935348029
+
+[32meth_call[0m
+  Contract call:       Farm#availableLiquidity
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#deployLiquidity
+  Transaction:         0x015694e74654a1d4ade36b1d07e479a8681db1287fa83908f5b874685d224db8
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            298068 of 30000000
+  Block #60:           0x914ecab0aa06691689fee2aed73a993e87a711fb35316f1026e358a464a392df
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_call[0m
+  Contract call:       StakingStrategy#getStrategyTVL
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x4c5859f0f772848b2d91f1d83e2fe57935348029
+
+[32meth_call[0m
+  Contract call:       Farm#availableLiquidity
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#withdrawFromStrategy
+  Transaction:         0x8bd07030449fdc0e5d154f77dc4cd8e2277936d0a5ac0518efc9a3635aa5c914
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            116605 of 30000000
+  Block #61:           0x6e3d520b3c6c3525d9d93fcc40a63ce50810c2afe5bd552ab546184d1729effc
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_call[0m
+  Contract call:       StakingStrategy#getStrategyTVL
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x4c5859f0f772848b2d91f1d83e2fe57935348029
+
+[32meth_call[0m
+  Contract call:       Farm#availableLiquidity
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#rebalanceStrategy
+  Transaction:         0x3651aaa23ef53b35e2e8bf1071cddf338fa6cac9e715c0172b9107b70ed6fb11
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            35144 of 30000000
+  Block #62:           0x8b635acc59416fd07779b2c24a9c7272cb4f4d6a0bffb3819cc6922575bed345
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#rebalanceStrategy
+  Transaction:         0xfeeb5b5f6a96cd1e6ec312978094c97d5b301dbbdd8e6c3b78776856944c7187
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            35480 of 30000000
+  Block #63:           0xb1ec6903f48ab87c05d6420b78c80f461b13e89e97651f627ea213892d459e0f
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_call[0m
+  Contract call:       Farm#farmOwner
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#setReserveRatioBps
+  Transaction:         0xc6ee1d257a04a935931ad6503f04f122e265f02d2643ea9e7d74f6bcd116129c
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            49173 of 30000000
+  Block #64:           0x1b44139b586b433ff0adc68bfff8cf913ac477172945a4f33083b269bac665c6
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#setMinReserve
+  Transaction:         0x117c8fe1da1f7a3ea9ccd2db6b2342dd22ecc2c9b67c67af53f2da12f91f8c6f
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            49338 of 30000000
+  Block #65:           0x3e53d2786b6d8d65ca3c5c0e46f1e1b89237834b2abc0c27a63858336b8026d0
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#startEpoch
+  Transaction:         0x58070bb05e03622f2a9882f6fe65c18b25f30077200208bd30f09ffc68a67dfc
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            176068 of 30000000
+  Block #66:           0xbd5ec05b55043a8ca221a76d1852cfa96fbda65600174c8e8eac18e2a69009c8
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#rebalanceToTarget
+  Transaction:         0xef70a642e61541a0864382e457456085e91c13764b022b23b9fb4ae1ac367205
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            194126 of 30000000
+  Block #67:           0x4b610fba93527740c5bff06611ec4c6f7619c545e9f1f0021bd1cce0d13688ce
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_call[0m
+  Contract call:       Farm#claimToken
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       DXPToken#approve
+  Transaction:         0x56030510db531b0e3ff943cb2633c7764d10a497605cb43ab3f159943b67fcbc
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
+  Value:               0 ETH
+  Gas used:            46021 of 30000000
+  Block #68:           0x0fea0a142fdb8b17cd51cf3bddfae03ce3733c7bbd4e65f44c09c218f49b0709
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_getBlockByNumber[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#provideLiquidity
+  Transaction:         0xf0be92a8b874e3deb6d0da303f5a3528816d87dbc79a3e013fb888b246d4d59d
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            124400 of 30000000
+  Block #69:           0x51a088fc1973fb1c2e139ce27e2870f8ceb3492f44101945b4398a8034c9f39e
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_call[0m
+  Contract call:       FarmClaimToken#balanceOf
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0xda1a2e33bd9e8ae3641a61ab72f137e61a7edf6e
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#withdrawLiquidity
+  Transaction:         0x2f44086fe06187cb3add55f62d395390b4d8c1ed38d7ab02918cdf8804ee1598
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            133082 of 30000000
+  Block #70:           0x6012dd0e388a04f6268ce3781026ef6965e6d8bd7587e436b401b1362e643d18
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_call[0m
+  Contract call:       FarmClaimToken#balanceOf
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0xda1a2e33bd9e8ae3641a61ab72f137e61a7edf6e
+
+[32meth_call[0m
+  Contract call:       Farm#farmOwner
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#pause
+  Transaction:         0x415e7afff714ddd44f466133e3665b16155825124355647539f7493ae9ceaa4f
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            47294 of 30000000
+  Block #71:           0xbb903f33a83ee316cb7002638638e46b829c2cda5fb9884b4800def7766226b6
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       DXPToken#approve
+  Transaction:         0x5c5d5f597df7cf6ab2498f4c49a81e64f10b01c00b05494028608a0da206945c
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
+  Value:               0 ETH
+  Gas used:            46021 of 30000000
+  Block #72:           0xbf624df48d8c6170e369bfad3a216102705288340a305dfa018e44ccb591352d
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[31meth_sendTransaction[0m
+  Contract call:       Farm#provideLiquidity
+  Transaction:         0x6e754fbe18d7b3091930ffe7cfaff14f433b61dcede1edba5f1f8c2c5475ccb7
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            29455 of 30000000
+  Block #73:           0x9a1434a10d1dcb46ca875b00684d92efdd422637c284b9458a1433e7783c72fe
+
+  Error: reverted with reason string 'Farm: paused'
+
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#unpause
+  Transaction:         0xfb450846ce5e5e5076d21d5b676b435a0d6575cd57d45a396fb6c572a1d5b7ed
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            24986 of 30000000
+  Block #74:           0xaf1f49167fbfad40e12d74ce854080d27230a033637242bd7095cdd4177529d9
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_blockNumber[0m
+[32meth_feeHistory[0m
+[32meth_sendTransaction[0m
+  Contract call:       Farm#provideLiquidity
+  Transaction:         0xcc7ddaf7b01b734111dd7eab07fdcc36d7d3376a162f70d2dbbc48e452387743
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  To:                  0x988eefc82b68ea3774ab6f0876da320cdb0d2c15
+  Value:               0 ETH
+  Gas used:            124400 of 30000000
+  Block #75:           0xbf98b6ea4d4bce5a6d9a4a2bb7349158e2e5e915a24c03c2fdff8214e43ce2cd
+
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_getTransactionReceipt[0m
+[32meth_getTransactionByHash[0m
+[32meth_getCode[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_accounts[0m
+[32mhardhat_metadata[0m
+[32mhardhat_metadata (2)[0m
+[32mhardhat_metadata (3)[0m
+[32mhardhat_metadata (4)[0m
+[32mhardhat_metadata (5)[0m
+[32mhardhat_metadata (6)[0m
+[32mhardhat_metadata (7)[0m
+[32mhardhat_metadata (8)[0m
+[32mhardhat_metadata (9)[0m
+[32mhardhat_metadata (10)[0m
+[32mhardhat_metadata (11)[0m
+[32mhardhat_metadata (12)[0m
+[32mhardhat_metadata (13)[0m
+[32mhardhat_metadata (14)[0m
+[32mhardhat_metadata (15)[0m
+[32mhardhat_metadata (16)[0m
+[32mhardhat_metadata (17)[0m
+[32mhardhat_metadata (18)[0m
+[32mhardhat_metadata (19)[0m
+[32mhardhat_metadata (20)[0m
+[32meth_call[0m
   Contract call:       RootFarm#farmOwner
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -1577,12 +2501,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: MockStakingAdapter
-  Contract address:    0x8f86403a4de0bb5791fa46b8e795c547942fe4cf
-  Transaction:         0xc675f8c8b4a3ae3e829cf4fa8dbe025485a51736bc363ed0b4fe4a60623c6f7a
+  Contract address:    0x51a1ceb83b83f1985a81c295d1ff28afef186e02
+  Transaction:         0xbf7faec75a7e2a2e2abbfe31cda1abf00450e6edfa42e1140bbb19b3249a5051
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            245825 of 30000000
-  Block #46:           0x4a065b5dd3ce631db21f3a860ee283becd9edf1b80b360f9630c395e7a279275
+  Block #76:           0x3057fea7963c2070d43b1d49f2ba7584dabf1e3d29d8755fddf39cb6826bd9f7
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1614,12 +2538,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: StakingStrategy
-  Contract address:    0x9d4454b023096f34b160d6b654540c56a1f81688
-  Transaction:         0x6feb0d56bb149be681b1d47d83220347c8932434e2a09e47a5b6679aa110fa57
+  Contract address:    0x36b58f5c1969b7b6591d752ea6f5486d069010ab
+  Transaction:         0x0b835a4f2338be32ed995d80026604627d9cfb19e60c2b4bd4a4d35a888b0c22
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            1748998 of 30000000
-  Block #47:           0x0a9cd3440df474f993f758cb5945c31271061421c04f70847788b13e239ed263
+  Gas used:            1748974 of 30000000
+  Block #77:           0xfbd29123d151421aa279dad75774c8742308182a296ea812d51f069725f4bca0
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1630,12 +2554,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#pause
-  Transaction:         0xf5357a835fca1002730911a1511c66a89b16312db8acdd6b3f458b4f0ba14c9c
+  Transaction:         0x5049d9a30b15806136d3ae0a5f1188285e6db2d23decd78d330a89566e74756e
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            47294 of 30000000
-  Block #48:           0x917dd97a8263b653376eee9dd03283c848c932f983bec9d66260232141b75af8
+  Block #78:           0x395ed530eab42a31838ec252905810931856c781ddd7d5933a90f410bae6d5d8
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1644,12 +2568,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#migrateStrategy
-  Transaction:         0xc40d08f4ff529377a78529f7c4e0179218874ee6e213b708ded55dbe8f574813
+  Transaction:         0xf3016df1d23253edca928c2884dbc83b525a7f6bef92fa2ed107916b917deaf1
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            42819 of 30000000
-  Block #49:           0xefd96be9947e0a081bcc12a50d12fe9188fd8ac3717e51b1d0283972c0235dcb
+  Block #79:           0x62c87616ac078db396dc80c4cea68f8908bfe65ceb566d2df34c823e1f891a0b
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1658,12 +2582,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#unpause
-  Transaction:         0x0af51b29c730657d5efbf8775d76b9edeef7a2390553bcc9d89ad7360b3894f5
+  Transaction:         0x5a94f9d5f261cb03ceb852ae3b6d210781b6b8f940d06977dc7294ac9d0f6eb2
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            24986 of 30000000
-  Block #50:           0xa5d1879042021814ce7a4deaacf7c67a9ee0856b5220fda5e91bb3cafb8f775b
+  Block #80:           0x4fbb518552f5709df108ee415c66b3d6652abb2e24f5f4629e501f4bd887733e
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1672,12 +2596,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#approve
-  Transaction:         0x91c2c629a6651ee20c8ded16f7660df3803a27f233f4b42ae34fe8500fb69dc1
+  Transaction:         0xd55d8afe18fe9ee3387685f0edac0c96ff400189b0b39484eafd3381560e254b
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
   Value:               0 ETH
   Gas used:            46021 of 30000000
-  Block #51:           0x3e1c8e9c7632558031aa63077e724c8bd0dd2ef1b3558781f4a742b3c90ce530
+  Block #81:           0x9d7741954b6f10fff8babc67bac5d4bdebc92fe1af3d1b23e211b9d02709e475
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1687,12 +2611,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#provideLiquidity
-  Transaction:         0xb5ea27dcd4902d0a8d3d073eab17e037dc104b47e55295d586045a7b0b68954a
+  Transaction:         0x64872466d67ecf3fddbebda510b93b9afae7b6decb409bb5b05f5d28cc8c9fdc
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            255189 of 30000000
-  Block #52:           0x068d6772699769b55dbc84024061c83c997ddf32ce0101c53b52ff6c8b243d94
+  Block #82:           0xae262dbecaafa108ce3b4c15eb5be267bda95883a99b680680634f793849945d
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1700,23 +2624,23 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#availableLiquidity
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       StakingStrategy#getStrategyTVL
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x9d4454b023096f34b160d6b654540c56a1f81688
+  To:                  0x36b58f5c1969b7b6591d752ea6f5486d069010ab
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#deployLiquidity
-  Transaction:         0x50061fcf6734cfe4784ddde4d3d15d3039daa3936b936bb5e4462536ff3164cc
+  Transaction:         0xa4cc2787639aa2af1dcf2be54ce3e47a9798cfca21eb8e43e648b4f68ca36687
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            211707 of 30000000
-  Block #53:           0x313585dccb7080fcd32c1442318d2c9f0af752a4864533bacbe397a857185e94
+  Block #83:           0x19615a3cbdfd3a97da2f5df00589c1c73756653d76e635298b06c156726c041a
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1724,23 +2648,23 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#availableLiquidity
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       StakingStrategy#getStrategyTVL
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x9d4454b023096f34b160d6b654540c56a1f81688
+  To:                  0x36b58f5c1969b7b6591d752ea6f5486d069010ab
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#withdrawFromStrategy
-  Transaction:         0x6fe1f7cb48200363434ce95aee8a3dd4c79d75064e2880dae390ea6ce1a54763
+  Transaction:         0x2fc77694a6d21788805dbf97414238cba83199f6f099dc901fbf03268bc7cd55
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            93560 of 30000000
-  Block #54:           0xc00cef5006753ab5cea0591578d59b04334861d97979e30a6982a83a60270441
+  Block #84:           0xab36c06da6577e4bcb599816d1069704ab8805ab00cb5cc51d91619c7b579d66
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1748,23 +2672,23 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#availableLiquidity
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       StakingStrategy#getStrategyTVL
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x9d4454b023096f34b160d6b654540c56a1f81688
+  To:                  0x36b58f5c1969b7b6591d752ea6f5486d069010ab
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#rebalanceStrategy
-  Transaction:         0x1615368e416f264d900eeda36c51312ed7fa6f57930c4e5c79a0efb4377f079e
+  Transaction:         0x635a52a9224a74ca3483bcdb0a4b782441199e353503f04f48e5fb8f0bbb1063
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            35166 of 30000000
-  Block #55:           0x9f4f64715e448109f6a736b751431a0ac0f98a14d3238c32cf4a93a239bb568a
+  Block #85:           0xd9fb855a554112f00f0fd5819b95bf2ba882c33bf54a69286b15fc7b507e0b75
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1776,12 +2700,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#rebalanceStrategy
-  Transaction:         0xbe340b41ba62cf9ac1e6c492df2b2bc1be7e986b806562ce92fb7bc277b08d1e
+  Transaction:         0x1554309f01b7f4893055f768caf7f11de65e467d493e2a40129feee008e6ca3a
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            35480 of 30000000
-  Block #56:           0xbb55e1ba3e6fa1992136dda47267b90d20fe024159db29c83689e8cea18724b8
+  Block #86:           0xa0f7b1cd62a4ed090164ba8dafc0d1c88fbbb251410c097eb8a482c2a8e00e30
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1813,18 +2737,18 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#farmOwner
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#setReserveRatioBps
-  Transaction:         0x46bdc495d68df6d6931ad262512e45ee45a7bf5bb67416e022b6d8bd72fa16bb
+  Transaction:         0x5d0157bcc4c213a017ae654868d9ca275381eaa423710f3380c4780ff7f40654
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            49173 of 30000000
-  Block #57:           0xbbc41682fb3e92c54d4aae2cae6029382a548b97672fbef4c5f80f015a044726
+  Block #87:           0xeff7d7a918798c2f346737f320a699b8391c605484cb2f3aaa5e6fb2df2aeb6d
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1833,12 +2757,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#setMinReserve
-  Transaction:         0xdb3cb8c69f6971935ab257556cc84bfd1b71d977dd0f121b23ecba0c43d2e256
+  Transaction:         0x850dbe94ea68566fde4b64c88494520eafe0580a5cec8cf6e7cf1c497ca4b760
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            49338 of 30000000
-  Block #58:           0xcf6627da9b15d599c9be781908ffbd2b34a44487c587f16bb3bc901eefd89166
+  Block #88:           0x22fb489f71360c834a467fbc1736d5c488719fe7d2ded2b7fe882a60230f3308
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1847,12 +2771,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#startEpoch
-  Transaction:         0x7287f40bc87372db3696ad3fadf55772b4df088f3ae7c15660dcbb684045cda0
+  Transaction:         0x1da5bc1cafd3cfa05e3701098e220d63c1f4369af5e0895bee683e98dd557996
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            176134 of 30000000
-  Block #59:           0x442ab339c4a19e02f0f4b9a7c0c7cb6cdc170f61738e17cff890ff89b7be38b9
+  Block #89:           0x1411ad8f02282bf5c0f54fa623e6a816330881399717de647263067292c23717
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1861,12 +2785,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#rebalanceToTarget
-  Transaction:         0x0f89448575879d0403bc34a260f01c665833b0fbd23d50ee0248e966d9ec212e
+  Transaction:         0x34ae9dbd5adefb8af67675eeaef03af9563d54e242f276f7d87d351e0047fb55
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            148805 of 30000000
-  Block #60:           0x312faa527b7a4aac88d97392efd678c0d7ec057afc2b6fdd82828fb83dcab571
+  Block #90:           0x1029714be93aadd07fce34dbe0b5ffd971d2170e4527a668019c570287738d5f
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1920,12 +2844,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#approve
-  Transaction:         0x68c249930f471945b62ccf1c55ae8ff1ff4028810db94b9f67691116fd294f09
+  Transaction:         0xb8d939636a4f571e178093811750f762daf0bb5dd1c3f154bbfccf15f8c5dfed
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
   Value:               0 ETH
   Gas used:            46009 of 30000000
-  Block #61:           0x7dd5888836beb77226178d7e5f955182968dfc4c26f4c33285fb4ea75fb01935
+  Block #91:           0x7f3538cf37d93fd3290b74499cb0a40d0d3268cf3d54efd7d41e290439577bc2
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1934,12 +2858,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#pause
-  Transaction:         0xeddd052e7e7a18a2a48540d5a1d68fff0b299e5f9bf5ee79f2958cec9598b2c0
+  Transaction:         0x23b7d87c0effd6fdfd8d6f6c8f7555dbbe2a58e744cc2400330817547b0f27eb
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            47294 of 30000000
-  Block #62:           0x77036152c3188ec25d9d3333433dba464a62a6efc8cc7c8de38415fab2bebf01
+  Block #92:           0x0a2efc526827ecad8446e905705700ee806ea47e51b75392eaa82dede20e6637
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1949,12 +2873,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [31meth_sendTransaction[0m
   Contract call:       RootFarm#provideLiquidity
-  Transaction:         0x27545c3c59a6818681e8453bf7c54be97e4be28a1cd6561daf279edeb37b5852
+  Transaction:         0x90d48c586ae697807e18ce6b03cfa6adf5829bf52f4221c0c5bd41f97a08e33f
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            24391 of 30000000
-  Block #63:           0x64f2cb9baf69caad8ff520176d75e87ef2fb6945dca7458f18f7ae706c1bd738
+  Block #93:           0x211d75c57798eb80fe255b4675fb4553a13e563fbb5d318ab04e48f3e4050e4b
 
   Error: reverted with reason string 'Farm: paused'
 
@@ -1962,12 +2886,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#unpause
-  Transaction:         0xfb46c6ebd9b9539b71623c733a0338fc4e33134cdda4dc76040f25762aa6a2b2
+  Transaction:         0x6984541b31d295ebdb403112f1d41beffec2668b408db6360209a271dd36e7ee
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            24986 of 30000000
-  Block #64:           0x593989f0922b59ff814cfa15885c1f63f8d08190f47c25a3abdbe99d4ccaa7ff
+  Block #94:           0x3359a066b7b3f9e1f42d8914338ca3f66151a18346c46db5c5e363444680c0ab
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -1976,12 +2900,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#provideLiquidity
-  Transaction:         0x9544f1778649454122c3ec51ceda60521cc46dba19c4e62229379c593e2f1ee1
+  Transaction:         0xdfd8812e0a8044b41a9fbebeb9a609011f12d09d27fa2749689a35ee0607446b
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            101581 of 30000000
-  Block #65:           0x146b3d2fe31215ff8fef428f1a5fc600bdcb9e6c512f979425fd1a41c2778c98
+  Block #95:           0x488dcfbdb16fdd1f0f34e22af0df0335d1e8ea7a55f80e346f7bfc8ffac0b181
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2034,18 +2958,18 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#farmOwner
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#pause
-  Transaction:         0xc623fa26f3998d0ce2911aa83af8db004cc0350640ef5418029ba7dde62fbc70
+  Transaction:         0x0c5e9266a16c36d34083158d8aef7f8efe36f5b25fa22246ca38824f7c44eed6
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            47294 of 30000000
-  Block #66:           0x2c65fa8d7102e0a43a2eb9afa65ba9bb53ad6c1bec628272931409985a7efaaa
+  Block #96:           0x943b49e1f374349b84cd4545f82895795762a91efb8f2e23147f92149b3ea429
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2075,12 +2999,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: MockStakingAdapter
-  Contract address:    0x5081a39b8a5f0e35a8d959395a630b68b74dd30f
-  Transaction:         0xca2e8101d985042a4f459e27d0efbb3a8c9315ecb36cfcb8ae004824906cb27f
+  Contract address:    0xa4899d35897033b927acfcf422bc745916139776
+  Transaction:         0x9c8dfa711e2d2eeca55d94b02db8a49963297794777ee2c04d6fa41b2d2ec93d
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            245825 of 30000000
-  Block #67:           0xf64f2682d64195fd53fba70066afa3b4dfff0b0a1c7689982c90af38e127ce17
+  Block #97:           0x7fed921066341038dd8041e132fded033384a1042a34651a51ecdbffc4e66758
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2112,12 +3036,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: StakingStrategy
-  Contract address:    0x1fa02b2d6a771842690194cf62d91bdd92bfe28d
-  Transaction:         0x6298efd75072a38700c6bc215d58d159c651f898685d1664871f552697d95100
+  Contract address:    0xf953b3a269d80e3eb0f2947630da976b896a8c5b
+  Transaction:         0xa91efad549cb3d980ddbbb91612eb03d604cf30832161a051e95282a6007cd8d
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
-  Gas used:            1748998 of 30000000
-  Block #68:           0x0f8147bd46635e3a0fbb5022e1b67c3ede8762065fa7eacc9d92c85abfbc9d7d
+  Gas used:            1748974 of 30000000
+  Block #98:           0x988e408a609cd0749f0a2cd0db3703dbeaf4031186df50cf1e08089c58d1d491
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2128,12 +3052,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       RootFarm#migrateStrategy
-  Transaction:         0x9a6116f77ac31c634c3ae796378671797a9a04476c640da26378270b20868316
+  Transaction:         0x622c8e7b1427909ac37c67bd0f4fc2f18f89d496f271d31182347498d061aac2
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
   Value:               0 ETH
   Gas used:            92413 of 30000000
-  Block #69:           0xa2c123ee919128bbc4340381fe96bd78ae06bd53984fadabbad1e84df8ae35aa
+  Block #99:           0x40707300115e2d23135171d8195d43dec06a9a03a6393b3cf559cc4d416c17a6
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2165,22 +3089,22 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#owner
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#protocolMaster
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#strategy
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#claimToken
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -2206,32 +3130,32 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#lpIncentiveSplit
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#verifierIncentiveSplit
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#yieldYodaIncentiveSplit
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#farmOwnerIncentiveSplit
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#reserveRatioBps
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#minReserve
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -2257,22 +3181,22 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootFarm#totalLiquidity
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#deployedLiquidity
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#availableLiquidity
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_call[0m
   Contract call:       RootFarm#accYieldPerShare
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0xa82ff9afd8f496c3d6ac40e2a0f282e47488cfc9
+  To:                  0x70e0ba845a1a0f2da3359c97e0285013525ffc49
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -2298,22 +3222,22 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       ProtocolCore#farmFactory
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_call[0m
   Contract call:       ProtocolCore#consensus
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_call[0m
   Contract call:       ProtocolCore#bridgeAdapter
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_call[0m
   Contract call:       ProtocolCore#liquidityManager
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x7a2088a1bfc9d81c55368ae168c2c02570cb814f
+  To:                  0x84ea74d481ee0a5332c457a4d796187f6ba67feb
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -2339,7 +3263,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       DXPToken#owner
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -2365,12 +3289,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       FarmFactory#owner
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x4a679253410272dd5232b3ff7cf5dbb88f295319
+  To:                  0xc3e53f4d16ae77db1c982e75a937b9f60fe63690
 
 [32meth_call[0m
   Contract call:       FarmFactory#currentFarmId
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x4a679253410272dd5232b3ff7cf5dbb88f295319
+  To:                  0xc3e53f4d16ae77db1c982e75a937b9f60fe63690
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -2396,12 +3320,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootAnchorMMStrategy#farm
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x851356ae760d987e095750cceb3bc6014560891c
+  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
 
 [32meth_call[0m
   Contract call:       RootAnchorMMStrategy#asset
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x851356ae760d987e095750cceb3bc6014560891c
+  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
 
 [32meth_getCode[0m
 [32meth_accounts[0m
@@ -2428,7 +3352,7 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       RootAnchorMMStrategy#getStrategyTVL
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x851356ae760d987e095750cceb3bc6014560891c
+  To:                  0x99bba657f2bbc93c02d617f8ba121cb8fc104acf
 
 [32meth_accounts[0m
 [32mhardhat_metadata[0m
@@ -2497,12 +3421,12 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract deployment: MockStakingAdapter
-  Contract address:    0x04c89607413713ec9775e14b954286519d836fef
-  Transaction:         0xeef46c66b28c5f7cbd8519c81ee634a641527b5d5d6a5b3d748d2bbe905a2371
+  Contract address:    0x5c74c94173f05da1720953407cbb920f3df9f887
+  Transaction:         0xba6520201c36781da6182ea989847b29efe501b90d07b07e9dd9aa19524c6cb2
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
   Value:               0 ETH
   Gas used:            245825 of 30000000
-  Block #70:           0xe68fceb426fa6feb87a7cbb385bfab48b435810ccc116672bd597ef2a741967e
+  Block #100:          0xc828b754c1ea26da8ce6cf916270e44be1172a8449db3799ed1ef07538da61dc
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2512,18 +3436,18 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       DXPToken#balanceOf
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       DXPToken#approve
-  Transaction:         0xe3a65b854569104ba044a693209a89a1cd6b09d75e1fefbc4467043033423371
+  Transaction:         0x0edc69448ec2a8210a498634df3768f05a433b81b120bc93ab1153c2340ae2e4
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
   Value:               0 ETH
   Gas used:            46021 of 30000000
-  Block #71:           0x6c522c4f983fa5410340fe7afa3df33326a7fa3d1cb7ad7c25ec36dd92013252
+  Block #101:          0xe96ff2cc136f3d1724ae3961ad9c5ae2899a9f1973494bdce5c32f69f9b7b160
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2532,73 +3456,73 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       MockStakingAdapter#deposit
-  Transaction:         0x914f9394f57d9e1d3703eef8d993fadcf34ee20fa6f7f98d26fcd0d1ccfaad5e
+  Transaction:         0x7473dba5b00ee91c73e911a215a297ed3a08f6891e314c0b8e776fe783f75552
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x04c89607413713ec9775e14b954286519d836fef
+  To:                  0x5c74c94173f05da1720953407cbb920f3df9f887
   Value:               0 ETH
-  Gas used:            77399 of 30000000
-  Block #72:           0xd48043e89869ecb6de2f2ff6b4319c1cbbf5408d4d7b1ef327ff367d16042ca9
+  Gas used:            77387 of 30000000
+  Block #102:          0x6f5b4992b3f6b89c79cca1fcb780cc03b36bf742c3b9d2129cfc95d5eb88f08c
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
 [32meth_call[0m
   Contract call:       DXPToken#balanceOf
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
 
 [32meth_call[0m
   Contract call:       DXPToken#balanceOf
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
 
 [32meth_call[0m
   Contract call:       MockStakingAdapter#totalAssets
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x04c89607413713ec9775e14b954286519d836fef
+  To:                  0x5c74c94173f05da1720953407cbb920f3df9f887
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       MockStakingAdapter#withdraw
-  Transaction:         0x7db7082bcd1f95192533c53cac641509b403c39bbc4aef1ac72980c420255d7b
+  Transaction:         0xc03572f005425cebcd50471843b4e5fff41ff161dc148b022ed5efd51994609d
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x04c89607413713ec9775e14b954286519d836fef
+  To:                  0x5c74c94173f05da1720953407cbb920f3df9f887
   Value:               0 ETH
-  Gas used:            43042 of 30000000
-  Block #73:           0x534554f3f149b47b9a681b6e85ca68cf07e77a60aa3b5d51717ebfede7e0be28
+  Gas used:            43030 of 30000000
+  Block #103:          0xc1a2720ee343e21037f130b554c3ebb786a569aba69b73a8f790f9896d4b9326
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
 [32meth_call[0m
   Contract call:       DXPToken#balanceOf
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
 
 [32meth_call[0m
   Contract call:       DXPToken#balanceOf
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x59b670e9fa9d0a427751af201d676719a970857b
+  To:                  0x09635f643e140090a9a8dcd712ed6285858cebef
 
 [32meth_call[0m
   Contract call:       MockStakingAdapter#totalAssets
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x04c89607413713ec9775e14b954286519d836fef
+  To:                  0x5c74c94173f05da1720953407cbb920f3df9f887
 
 [32meth_call[0m
   Contract call:       MockStakingAdapter#pendingRewards
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x04c89607413713ec9775e14b954286519d836fef
+  To:                  0x5c74c94173f05da1720953407cbb920f3df9f887
 
 [32meth_blockNumber[0m
 [32meth_feeHistory[0m
 [32meth_sendTransaction[0m
   Contract call:       MockStakingAdapter#harvest
-  Transaction:         0xd49ff5a4c94429276af968605e8e2d4c3701b186facf6bf95f4689077226ffe2
+  Transaction:         0x9022a1569759fbe4f9efab8943cfe8e0316a2576bfa2a27e82ffd6824ee5afd4
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x04c89607413713ec9775e14b954286519d836fef
+  To:                  0x5c74c94173f05da1720953407cbb920f3df9f887
   Value:               0 ETH
-  Gas used:            22080 of 30000000
-  Block #74:           0xccf3a5268850f7fa55a104e12ffec04571bfa26d863780cc7798a50827e7685b
+  Gas used:            22050 of 30000000
+  Block #104:          0xa884bb60f109ba103f3f2109c6a3190565ef29ed99e6f2a86808a14b8e559c73
 
 [32meth_getTransactionReceipt[0m
 [32meth_getTransactionByHash[0m
@@ -2607,6 +3531,6 @@ Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 [32meth_call[0m
   Contract call:       MockStakingAdapter#pendingRewards
   From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-  To:                  0x04c89607413713ec9775e14b954286519d836fef
+  To:                  0x5c74c94173f05da1720953407cbb920f3df9f887
 
 [32meth_getBlockByNumber[0m

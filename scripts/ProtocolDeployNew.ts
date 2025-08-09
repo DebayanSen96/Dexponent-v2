@@ -1,7 +1,7 @@
 import { ethers, network } from "hardhat";
 import fs from "fs";
 import path from "path";
-import { parseEther, ZeroAddress } from "ethers";
+import { parseEther, ZeroAddress, keccak256, toUtf8Bytes } from "ethers";
 
 const confirmationsMap: Record<string, number> = { sepolia: 5, "base-sepolia": 5, hardhat: 1, localhost: 1 };
 
@@ -116,6 +116,65 @@ async function main() {
     await wait(await rootFarm.updateStrategy(await strat.getAddress()));
     console.log("RootAnchorMMStrategy:", await strat.getAddress());
     addresses.RootAnchorMMStrategy = await strat.getAddress();
+  }
+  {
+    const nextIdBefore = await (await ethers.getContractAt("FarmFactory", await farmFactory.getAddress())).currentFarmId();
+    const isApproved = await protocol.approvedFarmOwners(deployer.address);
+    if (!isApproved) {
+      await wait(await protocol.setApprovedFarmOwner(deployer.address, true));
+      console.log("Approved farm owner:", deployer.address);
+    }
+    const salt = keccak256(toUtf8Bytes("modular-farm-1"));
+    const maturityPeriod = 86400;
+    const splits = { lps: 70, verifiers: 10, yodas: 10, owner: 10 };
+    const tx = await protocol.createApprovedFarm(
+      salt,
+      await dxp.getAddress(),
+      maturityPeriod,
+      splits.verifiers,
+      splits.yodas,
+      splits.lps,
+      splits.owner,
+      ZeroAddress,
+      "mDXP",
+      "mDXP",
+      false,
+      ZeroAddress
+    );
+    const rc = await tx.wait(confirmationsMap[network.name] ?? 1);
+    const newFarmId = nextIdBefore;
+    const modularFarmAddr = await protocol.farmAddressOf(newFarmId);
+    console.log("Modular Farm:", modularFarmAddr, "id=", newFarmId.toString());
+    addresses.ModularFarm = modularFarmAddr;
+    const Adapter = await ethers.getContractFactory("MockStakingAdapter");
+    const adapterA = await Adapter.deploy();
+    await wait(adapterA.deploymentTransaction());
+    const adapterB = await Adapter.deploy();
+    await wait(adapterB.deploymentTransaction());
+    const StakingStrategy = await ethers.getContractFactory("StakingStrategy");
+    const adapters = [await adapterA.getAddress(), await adapterB.getAddress()];
+    const weights = [5000, 5000];
+    const stakingStrat = await StakingStrategy.deploy(
+      modularFarmAddr,
+      await dxp.getAddress(),
+      await dxp.getAddress(),
+      maturityPeriod,
+      parseEther("1"),
+      parseEther("1000000"),
+      500,
+      false,
+      splits.lps,
+      splits.verifiers,
+      splits.yodas,
+      splits.owner,
+      adapters,
+      weights
+    );
+    await wait(stakingStrat.deploymentTransaction());
+    const modularFarm = await ethers.getContractAt("Farm", modularFarmAddr);
+    await wait(await modularFarm.updateStrategy(await stakingStrat.getAddress()));
+    console.log("Modular StakingStrategy:", await stakingStrat.getAddress());
+    addresses.ModularStakingStrategy = await stakingStrat.getAddress();
   }
   const dxpCtr = await ethers.getContractAt("DXPToken", await dxp.getAddress());
   const toFarmOwner = parseEther("100000");
