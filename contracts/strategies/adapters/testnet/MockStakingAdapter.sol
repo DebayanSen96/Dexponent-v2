@@ -25,7 +25,6 @@ contract MockStakingAdapter is IStakingAdapter {
         IERC20(asset).safeTransfer(msg.sender, amount);
         return amount;
     }
-
     function harvest(address /*asset*/) external returns (uint256) {
         return 0;
     }
