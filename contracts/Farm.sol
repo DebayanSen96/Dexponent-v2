@@ -40,7 +40,35 @@ contract Farm is Ownable, ReentrancyGuard {
 
     /// @notice Returns available liquidity held in the Farm.
     function availableLiquidity() public view returns (uint256) {
+        if (totalLiquidity <= deployedLiquidity) return 0;
         return totalLiquidity - deployedLiquidity;
+    }
+
+    function totalAssets() public view returns (uint256) {
+        return totalLiquidity + accumulatedYieldDXP;
+    }
+
+    function totalShares() public view returns (uint256) {
+        return claimToken.totalSupply();
+    }
+
+    function pricePerShare() public view returns (uint256) {
+        uint256 ts = totalShares();
+        if (ts == 0) return 1e18;
+        return (totalAssets() * 1e18) / ts;
+    }
+
+    function convertToShares(uint256 assets) public view returns (uint256) {
+        uint256 ts = totalShares();
+        uint256 ta = totalAssets();
+        if (ts == 0 || ta == 0) return assets;
+        return (assets * ts) / ta;
+    }
+
+    function convertToAssets(uint256 shares) public view returns (uint256) {
+        uint256 ts = totalShares();
+        if (ts == 0) return shares;
+        return (shares * totalAssets()) / ts;
     }
 
     /// @notice Accumulated principal penalty fees (slash fees) held in reserve.
@@ -57,6 +85,9 @@ contract Farm is Ownable, ReentrancyGuard {
 
     /// @notice Accumulated yield (in DXP) that has been pulled from the strategy.
     uint256 public farmRevenueDXP;
+
+    /// @notice Accumulated yield (in DXP) that increases NAV for share holders.
+    uint256 public accumulatedYieldDXP;
 
     // ======================================================
     // LP Position Tracking (Aggregated per LP)
@@ -355,7 +386,6 @@ contract Farm is Ownable, ReentrancyGuard {
 
         totalLiquidity += amount;
 
-        // Update the LP's aggregated position.
         Position storage pos = positions[msg.sender];
         uint256 oldPrincipal = pos.principal;
         uint256 newPrincipal = oldPrincipal + amount;
@@ -369,11 +399,8 @@ contract Farm is Ownable, ReentrancyGuard {
         pos.principal = newPrincipal;
         pos.lastUpdate = block.timestamp;
 
-        // Update yield debt so LP does not claim yield accrued before this deposit.
-        yieldDebt[msg.sender] = (newPrincipal * accYieldPerShare) / 1e18;
-
-        // Mint claim tokens (1:1).
-        claimToken.mint(msg.sender, amount);
+        uint256 shares = convertToShares(amount);
+        claimToken.mint(msg.sender, shares);
 
         try
             protocolMaster.distributeDepositBonus(
@@ -430,20 +457,19 @@ contract Farm is Ownable, ReentrancyGuard {
             // (Bonus return processing can be handled externally.)
         }
 
+        uint256 sharesToBurn = convertToShares(amount);
+
         // Update LP position.
         pos.principal -= amount;
+        totalLiquidity -= amount;
         pos.lastUpdate = block.timestamp;
         emit PositionUpdated(msg.sender, pos.principal, pos.weightedMaturity);
-
-        // Update yield debt.
-        if (pos.principal > 0) {
-            yieldDebt[msg.sender] = (pos.principal * accYieldPerShare) / 1e18;
-        } else {
-            yieldDebt[msg.sender] = 0;
+        if (sharesToBurn > claimToken.balanceOf(msg.sender)) {
+            sharesToBurn = claimToken.balanceOf(msg.sender);
         }
+        claimToken.burn(msg.sender, sharesToBurn);
 
         // Burn claim tokens corresponding to the withdrawn amount.
-        claimToken.burn(msg.sender, amount);
         if (isEarly || returnBonus) {
             // Try/catch for any external revert
             try
@@ -469,7 +495,7 @@ contract Farm is Ownable, ReentrancyGuard {
                     "Farm: transfer failed"
                 );
 
-                _claimYield(msg.sender);
+
             } else {
                 (bool success, ) = msg.sender.call{value: netWithdrawal}("");
                 require(success, "Farm: native transfer failed");
@@ -487,13 +513,14 @@ contract Farm is Ownable, ReentrancyGuard {
                     require(success, "Farm: native transfer failed");
                 }
             }
+            require(needed <= deployedLiquidity, "Farm: insufficient deployed liquidity");
             FarmStrategy(strategy).withdrawLiquidity(needed);
+            deployedLiquidity -= needed;
             if (asset != address(0)) {
                 require(
                     IERC20(asset).transfer(msg.sender, needed),
                     "Farm: post-withdraw transfer failed"
                 );
-                _claimYield(msg.sender);
             } else {
                 (bool success, ) = msg.sender.call{value: needed}("");
                 require(success, "Farm: native post-withdraw transfer failed");
@@ -538,9 +565,9 @@ contract Farm is Ownable, ReentrancyGuard {
     function pendingYield(
         address lp
     ) external view returns (uint256 pendingYieldVal) {
-        Position storage pos = positions[lp];
-        if (pos.principal == 0) return 0;
-        uint256 accumulated = (pos.principal * accYieldPerShare) / 1e18;
+        uint256 userAssets = assetsOf(lp);
+        if (userAssets == 0) return 0;
+        uint256 accumulated = (userAssets * accYieldPerShare) / 1e18;
         if (accumulated < yieldDebt[lp]) return 0;
         pendingYieldVal = accumulated - yieldDebt[lp];
     }
@@ -556,20 +583,15 @@ contract Farm is Ownable, ReentrancyGuard {
     }
 
     function _claimYield(address user) internal {
-        Position storage pos = positions[user];
-        require(pos.principal > 0, "Farm: no active position");
-
-        uint256 principal = pos.principal;
-        if (principal == 0) {
-            return;
-        }
+        uint256 principal = assetsOf(user);
+        require(principal > 0, "Farm: no active position");
         uint256 accumulated = (principal * accYieldPerShare) / 1e18;
         require(
-            accumulated >= yieldDebt[msg.sender],
+            accumulated >= yieldDebt[user],
             "Farm: yield calculation error"
         );
 
-        uint256 pending = accumulated - yieldDebt[msg.sender];
+        uint256 pending = accumulated - yieldDebt[user];
         if (pending == 0) {
             return;
         }
@@ -710,13 +732,11 @@ contract Farm is Ownable, ReentrancyGuard {
 
     function _addLocalLPYield(uint256 dxpAmount) internal {
         if (totalLiquidity == 0) {
-            // No depositors exist right now, so either do nothing
-            // or store it in a leftover bucket
             return;
         }
-        // Increase the accumulator
+
         // This means each user principal will have “more yield” to claim.
-        accYieldPerShare += (dxpAmount * 1e18) / totalLiquidity;
+        accumulatedYieldDXP += dxpAmount;
     }
 
     // ======================================================
@@ -732,18 +752,29 @@ contract Farm is Ownable, ReentrancyGuard {
             msg.sender == address(claimToken),
             "Farm: caller is not associated claim token"
         );
-        // This function is called when a transfer fee is deducted.
-        // The fee amount is added to the principal reserve.
         uint256 fee = protocolMaster.getTransferFeeRate();
         require(fee > 0, "Farm: no transfer fee");
-        uint256 feeAmount = (amount * fee) / 10000; // Assuming fee is in basis points (0-10000).
+        uint256 feeAmount = (amount * fee) / 10000;
         require(feeAmount > 0, "Farm: fee amount is zero");
-        uint256 netAmount = amount - feeAmount; // Net amount after fee deduction.
-        // Update the principal reserve with the fee amount.
         principalReserve += feeAmount;
-        positions[recipient].principal += netAmount; // Update recipient's principal.
-        positions[sender].principal -= netAmount; // Update sender's principal.
-        // Emit an event for the principal reserve update.
-        emit PrincipalReserveUpdated(fee, principalReserve);
+        if (positions[sender].principal > 0) {
+            yieldDebt[sender] = (assetsOf(sender) * accYieldPerShare) / 1e18;
+        } else {
+            yieldDebt[sender] = 0;
+        }
+        if (positions[recipient].principal > 0) {
+            yieldDebt[recipient] = (assetsOf(recipient) * accYieldPerShare) / 1e18;
+        }
+        emit PrincipalReserveUpdated(feeAmount, principalReserve);
     }
+
+    function assetsOf(address lp) public view returns (uint256) {
+        uint256 shares = claimToken.balanceOf(lp);
+        return convertToAssets(shares);
+    }
+
+    
+
+
+    
 }
