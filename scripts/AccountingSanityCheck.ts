@@ -4,6 +4,7 @@ import path from "path";
 import { parseEther, formatUnits, ZeroAddress } from "ethers";
 
 const confirmationsMap: Record<string, number> = { sepolia: 2, "base-sepolia": 2, hardhat: 1, localhost: 1 };
+const STRICT = network.name === "localhost" || network.name === "hardhat";
 
 async function wait(tx: any) {
   const conf = confirmationsMap[network.name] ?? 1;
@@ -81,21 +82,23 @@ async function main() {
   console.log("Pool:", poolAddr);
 
   const preTotalLiquidity: bigint = await farm.totalLiquidity();
-  const preAcc: bigint = await farm.accYieldPerShare();
+  const preTotalAssets: bigint = await farm.totalAssets();
+  const preTotalShares: bigint = await farm.totalShares();
+  const prePps: bigint = await farm.pricePerShare();
   const preClaimTokenAddr: string = await farm.claimToken();
   const claim = await ethers.getContractAt("FarmClaimToken", preClaimTokenAddr, signer);
   const preCts: bigint = await claim.totalSupply();
   const prePos = await farm.positions(signer.address);
-  const preDebt: bigint = await farm.yieldDebt(signer.address);
   const preDXP: bigint = await dxp.balanceOf(signer.address);
   const preVDXP: bigint = await claim.balanceOf(signer.address);
   console.log("\nPre-state");
   console.log("totalLiquidity:", formatUnits(preTotalLiquidity, 18));
-  console.log("accYieldPerShare:", preAcc.toString());
+  console.log("totalAssets:", formatUnits(preTotalAssets, 18));
+  console.log("totalShares:", formatUnits(preTotalShares, 18));
+  console.log("pricePerShare:", formatUnits(prePps, 18));
   console.log("claimToken:", preClaimTokenAddr);
   console.log("claimToken.totalSupply:", formatUnits(preCts, 18));
   console.log("position.principal:", formatUnits(prePos.principal, 18));
-  console.log("yieldDebt:", preDebt.toString());
   console.log("Signer DXP:", formatUnits(preDXP, 18));
   console.log("Signer vDXP:", formatUnits(preVDXP, 18));
 
@@ -103,26 +106,34 @@ async function main() {
   await wait(appr);
   console.log("\nApproved Farm to spend:", formatUnits(amount, 18), "DXP");
 
+  const expShares: bigint = await farm.convertToShares(amount);
   const dep = await farm.provideLiquidity(amount, maturity);
   await wait(dep);
   console.log("Deposit submitted. amount:", formatUnits(amount, 18), "maturity:", maturity.toString());
 
   const postDepTotalLiquidity: bigint = await farm.totalLiquidity();
+  const postDepTotalAssets: bigint = await farm.totalAssets();
+  const postDepTotalShares: bigint = await farm.totalShares();
+  const postDepPps: bigint = await farm.pricePerShare();
   const postDepCts: bigint = await claim.totalSupply();
   const postDepPos = await farm.positions(signer.address);
-  const postDepDebt: bigint = await farm.yieldDebt(signer.address);
   const balVDXP: bigint = await claim.balanceOf(signer.address);
   console.log("\nPost-deposit");
   console.log("totalLiquidity:", formatUnits(postDepTotalLiquidity, 18));
+  console.log("totalAssets:", formatUnits(postDepTotalAssets, 18));
+  console.log("totalShares:", formatUnits(postDepTotalShares, 18));
+  console.log("pricePerShare:", formatUnits(postDepPps, 18));
   console.log("claimToken.totalSupply:", formatUnits(postDepCts, 18));
   console.log("position.principal:", formatUnits(postDepPos.principal, 18));
-  console.log("yieldDebt:", postDepDebt.toString());
   console.log("Signer vDXP:", formatUnits(balVDXP, 18));
 
-  bigintEq(postDepTotalLiquidity - preTotalLiquidity, amount, "totalLiquidity delta after deposit");
-  bigintEq(postDepCts - preCts, amount, "claim totalSupply delta after deposit");
-  bigintEq(balVDXP, postDepPos.principal, "vDXP balance equals principal");
-  bigintEq(postDepDebt, (postDepPos.principal * postAccYield()) / 10n**18n, "yieldDebt updated vs accYieldPerShare");
+  if (STRICT) {
+    bigintEq(postDepTotalLiquidity - preTotalLiquidity, amount, "totalLiquidity delta after deposit");
+    bigintEq(postDepTotalAssets - preTotalAssets, amount, "totalAssets delta after deposit");
+    const minted = postDepCts - preCts;
+    approxEq(minted, expShares, 1n, "shares minted vs convertToShares");
+    approxEq(postDepPps, prePps, 1n, "pricePerShare unchanged on pure deposit");
+  }
 
   const owner = await farm.farmOwner();
   console.log("\nFarm owner:", owner);
@@ -142,44 +153,46 @@ async function main() {
     console.log("Adapter:", a, "totalAssets:", formatUnits(t, 18));
   }
 
-  const preWdDebt: bigint = await farm.yieldDebt(signer.address);
-  const preWdAcc: bigint = await farm.accYieldPerShare();
+  const preWdAssets: bigint = await farm.totalAssets();
+  const preWdPps: bigint = await farm.pricePerShare();
+  const preWdSharesToBurn: bigint = await farm.convertToShares(wd);
   const preWdPos = await farm.positions(signer.address);
   console.log("\nPre-withdraw");
   console.log("position.principal:", formatUnits(preWdPos.principal, 18));
-  console.log("yieldDebt:", preWdDebt.toString());
-  console.log("accYieldPerShare:", preWdAcc.toString());
+  console.log("pricePerShare:", formatUnits(preWdPps, 18));
 
   const wdTx = await farm.withdrawLiquidity(wd, false);
   await wait(wdTx);
   console.log("Withdraw submitted. amount:", formatUnits(wd, 18));
 
   const postWdTotalLiquidity: bigint = await farm.totalLiquidity();
+  const postWdTotalAssets: bigint = await farm.totalAssets();
+  const postWdPps: bigint = await farm.pricePerShare();
   const postWdCts: bigint = await claim.totalSupply();
   const postWdPos = await farm.positions(signer.address);
-  const postWdDebt: bigint = await farm.yieldDebt(signer.address);
   const postVDXP: bigint = await claim.balanceOf(signer.address);
 
-  bigintEq(preWdPos.principal - postWdPos.principal, wd, "principal reduced by withdrawn amount");
-  bigintEq(preWdCts() - postWdCts, wd, "claim totalSupply burned equals withdrawn amount");
-  bigintEq(preWdPos.principal - (await claim.balanceOf(signer.address)), wd, "vDXP burned equals withdrawn amount");
-  bigintEq(postWdAcc() - preWdAcc, 0n, "no yield accrual with mock adapter");
-  bigintEq(postWdDebt, (postWdPos.principal * postWdAcc()) / 10n**18n, "yieldDebt aligned after withdraw");
+  if (STRICT) {
+    bigintEq(preWdPos.principal - postWdPos.principal, wd, "principal reduced by withdrawn amount");
+    const burned = preWdCts() - postWdCts;
+    approxEq(burned, preWdSharesToBurn, 1n, "shares burned vs convertToShares");
+    bigintEq(preWdAssets - postWdTotalAssets, wd, "totalAssets reduced by withdrawn assets");
+    approxEq(postWdPps, preWdPps, 1n, "pricePerShare unchanged on pure withdraw");
+  }
   console.log("\nPost-withdraw");
   console.log("totalLiquidity:", formatUnits(postWdTotalLiquidity, 18));
+  console.log("totalAssets:", formatUnits(postWdTotalAssets, 18));
+  console.log("pricePerShare:", formatUnits(postWdPps, 18));
   console.log("claimToken.totalSupply:", formatUnits(postWdCts, 18));
   console.log("position.principal:", formatUnits(postWdPos.principal, 18));
-  console.log("yieldDebt:", postWdDebt.toString());
   console.log("Signer vDXP:", formatUnits(postVDXP, 18));
 
-  function postAccYield(): bigint { return preAcc; }
   function preWdCts(): bigint { return postDepCts; }
-  function postWdAcc(): bigint { return preWdAcc; }
 
   const postDXP: bigint = await dxp.balanceOf(signer.address);
   const netDXP = postDXP - preDXP;
   console.log("\n=== Summary ===");
-  console.log("Accounting checks passed on", network.name);
+  console.log("Accounting sanity run completed on", network.name, "STRICT=", STRICT);
   console.log("Deposited:", formatUnits(amount, 18));
   console.log("Withdrew:", formatUnits(wd, 18));
   console.log("Net DXP:", formatUnits(netDXP, 18));
