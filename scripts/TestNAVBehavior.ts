@@ -70,11 +70,11 @@ async function main() {
   console.log("pricePerShare:", formatUnits(pricePerShare, 18));
 
   console.log("\n--- Simulating Yield Harvest via principalReserve + ProtocolCore.pullFarmRevenue ---");
-  const [_, recipient] = await ethers.getSigners();
+  const recipientAddress = ethers.Wallet.createRandom().address;
   const vdxpToTransfer = vdxpBalance / 2n;
   const feeBps = await protocolCore.getTransferFeeRate();
   console.log("transferFeeBps:", feeBps.toString());
-  const tx1 = await vdxp.transfer(recipient.address, vdxpToTransfer);
+  const tx1 = await vdxp.transfer(recipientAddress, vdxpToTransfer);
   await wait(tx1);
   const fid = await farm.farmId();
   const tx2 = await protocolCore.pullFarmRevenue(fid);

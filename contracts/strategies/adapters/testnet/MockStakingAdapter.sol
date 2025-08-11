@@ -9,6 +9,7 @@ contract MockStakingAdapter is IStakingAdapter {
     using SafeERC20 for IERC20;
 
     mapping(address => uint256) public totalPrincipal; // asset => principal
+    address dummy;
 
     function deposit(address asset, uint256 amount) external returns (uint256) {
         require(asset != address(0) && amount > 0, "BAD");
@@ -25,7 +26,8 @@ contract MockStakingAdapter is IStakingAdapter {
         IERC20(asset).safeTransfer(msg.sender, amount);
         return amount;
     }
-    function harvest(address /*asset*/) external returns (uint256) {
+    function harvest(address asset) external returns (uint256) {
+        dummy = asset;
         return 0;
     }
 
