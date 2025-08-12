@@ -1,0 +1,80 @@
+sequenceDiagram
+    autonumber
+    participant U as User (EOA)
+    participant CT as ClaimToken (FarmClaimToken)
+    participant F as Farm.sol (NAV Shares)
+    participant S as Strategy (FarmStrategy)
+    participant PC as ProtocolCore.sol
+    participant LM as LiquidityManager
+    participant RF as RootFarm (protocol fees)
+    participant V as Verifiers[]
+    participant Y as YieldYodas[]
+
+    %% 1) Farm and Strategy Setup (off-chain initiation)
+    U->>PC: createApprovedFarm(params...) (owner role)
+    PC-->>U: farmAddress, farmId
+    U->>Factory: StrategyFactory.deploy...(adapters, weights, flags...)
+    Factory-->>U: strategyAddress (via event)
+    U->>F: updateStrategy(strategyAddress)
+
+    %% 2) Deposit (NAV-based shares, computed at pre-deposit NAV)
+    U->>F: provideLiquidity(amount, maturity)
+    Note over F: shares = amount * totalShares / NAV(before)
+    F->>CT: mint(shares) to U
+    F->>PC: distributeDepositBonus(farmId, U, amount, maturity)
+    PC-->>U: DXP bonus (protocol reserves)
+
+    %% 3) Optional: ClaimToken transfers (fee → principalReserve)
+    U->>CT: transfer(ClaimToken)
+    CT->>F: onClaimTransfer(sender, recipient, amount)
+    F->>PC: getTransferFeeRate()
+    F->>F: principalReserve += amount * feeBps / 10000
+    F->>F: sync yieldDebt for sender/recipient
+
+    %% 4) Owner/Keeper ops: deploy & rebalance
+    U->>F: deployLiquidity(amount)
+    F->>S: deployLiquidity(amount)
+    U->>F: rebalanceToTarget()
+    F->>S: deploy/withdraw to achieve reserves
+
+    %% 5) Revenue Pull (streamed DXP yield)
+    PC->>F: pullFarmRevenue()
+    F->>S: harvestRewards()
+    S-->>F: principal yield (farm asset)
+    F->>F: totalPrincipal = harvested + principalReserve; principalReserve=0
+    alt asset != DXP
+        F->>LM: getBestSwapAmountOut(asset→DXP) + swap
+        LM-->>F: yieldInDXP
+    else
+        Note over F: yieldInDXP = totalPrincipal
+    end
+    F->>F: accYieldPerShare += lpShare / totalAssets
+    F->>PC: transfer remainder DXP
+    PC->>PC: distributeRevenue(splits)
+    par stakeholders
+        PC-->>V: verifiers
+        PC-->>Y: yield yodas
+        PC-->>F: farm owner share
+    and protocol
+        PC->>RF: protocol DXP to RootFarm
+    end
+
+    %% 6) Withdraw (NAV burn) + optional penalty
+    U->>F: withdrawLiquidity(amount, returnBonus)
+    alt early
+        F->>F: slash fee -> principalReserve
+        F->>PC: reverseDepositBonus(farmId, U)
+    end
+    alt idle >= amount
+        F-->>U: transfer amount
+    else
+        F->>S: withdrawLiquidity(needed)
+        S-->>F: principal
+        F-->>U: transfer amount
+    end
+    Note over F: sharesToBurn = amount * totalShares / NAV(now)
+    F->>CT: burnFrom(U, sharesToBurn)
+
+    %% 7) Claim streamed yield (DXP)
+    U->>F: claimYield()
+    F-->>U: DXP (assets * accYieldPerShare - debt)

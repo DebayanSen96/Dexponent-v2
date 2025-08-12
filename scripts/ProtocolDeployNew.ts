@@ -146,6 +146,7 @@ async function main() {
     const modularFarmAddr = await protocol.farmAddressOf(newFarmId);
     console.log("Modular Farm:", modularFarmAddr, "id=", newFarmId.toString());
     addresses.ModularFarm = modularFarmAddr;
+<<<<<<< HEAD
     const Adapter = await ethers.getContractFactory("MockStakingAdapter");
     const adapterA = await Adapter.deploy();
     await wait(adapterA.deploymentTransaction());
@@ -158,6 +159,52 @@ async function main() {
       modularFarmAddr,
       await dxp.getAddress(),
       await dxp.getAddress(),
+=======
+    console.log("-- Deploying AdapterRegistry");
+    const Registry = await ethers.getContractFactory("AdapterRegistry");
+    const registry = await Registry.deploy();
+    await wait(registry.deploymentTransaction());
+    console.log("AdapterRegistry:", await registry.getAddress());
+    addresses.AdapterRegistry = await registry.getAddress();
+
+    console.log("-- Deploying mock adapters");
+    const MockAdapter = await ethers.getContractFactory("MockStakingAdapter");
+    const a1 = await MockAdapter.deploy();
+    await wait(a1.deploymentTransaction());
+    const a2 = await MockAdapter.deploy();
+    await wait(a2.deploymentTransaction());
+    console.log("Mock adapters:", await a1.getAddress(), await a2.getAddress());
+    addresses.MockStakingAdapterA = await a1.getAddress();
+    addresses.MockStakingAdapterB = await a2.getAddress();
+
+    const MockLending = await ethers.getContractFactory("MockLendingAdapter");
+    const la = await MockLending.deploy();
+    await wait(la.deploymentTransaction());
+    console.log("MockLendingAdapter:", await la.getAddress());
+    addresses.MockLendingAdapter = await la.getAddress();
+
+    console.log("-- Registering adapters");
+    await wait(await registry.registerAdapter("staking-mock-a", await a1.getAddress()));
+    await wait(await registry.registerAdapter("staking-mock-b", await a2.getAddress()));
+    await wait(await registry.registerAdapter("lending-mock-a", await la.getAddress()));
+
+    console.log("-- Deploying StrategyFactory");
+    const StrategyFactory = await ethers.getContractFactory("StrategyFactory");
+    const sf = await StrategyFactory.deploy(await registry.getAddress());
+    await wait(sf.deploymentTransaction());
+    console.log("StrategyFactory:", await sf.getAddress());
+    addresses.StrategyFactory = await sf.getAddress();
+
+    const selections = [
+      { name: "staking-mock-a", weightBps: 5000 },
+      { name: "staking-mock-b", weightBps: 5000 },
+    ];
+
+    const args = {
+      farm: modularFarmAddr,
+      asset: await dxp.getAddress(),
+      rewardToken: await dxp.getAddress(),
+>>>>>>> 863da2c (fixed cluttered files and streamlined deployment flow.)
       maturityPeriod,
       parseEther("1"),
       parseEther("1000000"),
@@ -183,6 +230,54 @@ async function main() {
     await wait(await modularFarm.setPool(mockPoolAddr));
     console.log("MockPool:", mockPoolAddr);
     addresses.MockPool = mockPoolAddr;
+
+    // --- Create second farm for LendingStrategy ---
+    const nextIdBefore2 = await (await ethers.getContractAt("FarmFactory", await farmFactory.getAddress())).currentFarmId();
+    const salt2 = keccak256(toUtf8Bytes("modular-farm-2"));
+    const tx2 = await protocol.createApprovedFarm(
+      salt2,
+      await dxp.getAddress(),
+      maturityPeriod,
+      splits.verifiers,
+      splits.yodas,
+      splits.lps,
+      splits.owner,
+      ZeroAddress,
+      "mDXP2",
+      "mDXP2",
+      false,
+      ZeroAddress
+    );
+    await tx2.wait(confirmationsMap[network.name] ?? 1);
+    const newFarmId2 = nextIdBefore2;
+    const modularLendingFarmAddr = await protocol.farmAddressOf(newFarmId2);
+    console.log("Modular Lending Farm:", modularLendingFarmAddr, "id=", newFarmId2.toString());
+    addresses.ModularLendingFarm = modularLendingFarmAddr;
+
+    // --- Deploy LendingStrategy via factory ---
+    const lendArgs = { farm: modularLendingFarmAddr, asset: await dxp.getAddress(), lendingAdapter: "lending-mock-a" };
+    const txLS = await (sf as any).deployLendingStrategy(lendArgs);
+    const rcLS = await txLS.wait(confirmationsMap[network.name] ?? 1);
+    let deployedLendStratAddr: string | undefined;
+    for (const log of rcLS!.logs) {
+      try {
+        const parsed = sf.interface.parseLog(log as any);
+        if (parsed?.name === "StrategyDeployed") {
+          deployedLendStratAddr = parsed.args.strategy;
+          break;
+        }
+      } catch (e) {}
+    }
+    if (!deployedLendStratAddr) {
+      throw new Error("Could not find StrategyDeployed event in transaction logs (lending)");
+    }
+    const lendingFarm = await ethers.getContractAt("Farm", modularLendingFarmAddr);
+    await wait(await lendingFarm.updateStrategy(deployedLendStratAddr));
+    console.log("Modular LendingStrategy:", deployedLendStratAddr);
+    addresses.ModularLendingStrategy = deployedLendStratAddr;
+
+    // Reuse the same mock pool for lending farm
+    await wait(await lendingFarm.setPool(mockPoolAddr));
   }
   const dxpCtr = await ethers.getContractAt("DXPToken", await dxp.getAddress());
   const toFarmOwner = parseEther("100000");
